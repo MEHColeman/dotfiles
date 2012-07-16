@@ -93,3 +93,7 @@ if [[ -s "$HOME/.bash_private" ]]
 then
   source "$HOME/.bash_private"
 fi
+if [[ -s "$HOME/.aliases" ]]
+then
+  source "$HOME/.aliases"
+fi

@@ -1,0 +1,7 @@
+alias gc='google-chrome >/dev/null 2>/dev/null &'
+
+alias sl='ls'
+alias s='ls'
+alias la='ls -lart'
+
+alias canhaz='sudo apt-get install'

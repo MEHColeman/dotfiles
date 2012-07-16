@@ -1,2 +1,2 @@
 # My configs
-Yaks shaved while-u-wait.
+clone into .dotfiles directory, run bin/install.rb
