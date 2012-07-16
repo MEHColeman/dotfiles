@@ -1,4 +1,4 @@
-#include "/home/tim/.dotfiles/lib/solarized/xresources-colors-solarized/Xresources"
+#include "/home/mark/.dotfiles/lib/solarized/xresources-colors-solarized/Xresources"
 
 URxvt.depth: 32
 URxvt*saveLines: 12000

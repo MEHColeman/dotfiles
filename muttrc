@@ -2,8 +2,8 @@ set record="=Sent"
 set postponed="=Drafts"
 set editor="vim"
 mailboxes =INBOX
-set realname="Tim Cowlishaw"
-set from="tim@mediasp.com"
+set realname="Mark Coleman"
+set from="mark.coleman@mediasp.com"
 set timeout=60
 # Bindings
 # Generic
