@@ -1,7 +1,32 @@
 alias gc='google-chrome >/dev/null 2>/dev/null &'
 
-alias sl='ls'
-alias s='ls'
 alias la='ls -lart'
 
+alias less='less -R'
+alias ack='ack-grep'
+alias lock='xscreensaver-command -lock'
 alias canhaz='sudo apt-get install'
+
+alias s="ls"
+alias sl="ls"
+alias la="ls -la"
+alias al="ls -la"
+alias lr="ls -lart"
+alias dev="cd ~/dev"
+
+alias gs='git status '
+alias ga='git add '
+alias gb='git branch '
+alias gc='git commit'
+alias gd='git diff'
+alias gdc='git diff --cached'
+alias go='git checkout '
+alias gk='gitk --all&'
+alias gx='gitx --all'
+
+alias got='git '
+alias get='git '
+
+alias bi='bundle check && bundle install'
+alias bii='bundle install'
+alias be='bundle exec'
