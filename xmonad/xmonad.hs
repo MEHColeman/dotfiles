@@ -60,7 +60,7 @@ main :: IO ()
 main = do
   xmproc <- spawnPipe "/usr/bin/xmobar /home/tim/.xmobarrc"
   xmonad $ defaultConfig {
-    keys = myKeys <+> keys defaultConfig 
+    keys = myKeys <+> keys defaultConfig
     , terminal = "urxvt"
     , workspaces = ["1:web", "2:term", "3:vim", "4:read", "5:chat", "6:mail", "7:music", "8:video", "9", "0"]
     , normalBorderColor = "#002b36"
