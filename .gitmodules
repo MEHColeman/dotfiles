@@ -4,9 +4,3 @@
 [submodule "lib/irssi-colors-solarized"]
 	path = lib/irssi-colors-solarized
 	url = git://github.com/huyz/irssi-colors-solarized.git
-[submodule "janus/command-t"]
-	path = janus/command-t
-	url = https://github.com/wincent/Command-T.git
-[submodule "Command-T"]
-	path = Command-T
-	url = https://github.com/wincent/Command-T.git
