@@ -6,4 +6,7 @@
 	url = git://github.com/huyz/irssi-colors-solarized.git
 [submodule "janus/command-t"]
 	path = janus/command-t
-	url = git://git.wincent.com/command-t.git
+	url = https://github.com/wincent/Command-T.git
+[submodule "Command-T"]
+	path = Command-T
+	url = https://github.com/wincent/Command-T.git
