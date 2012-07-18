@@ -21,7 +21,7 @@ import qualified Data.Map as M
 
 myKeys :: XConfig Layout -> M.Map (ButtonMask, KeySym) (X ())
 myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList [
- ((modm, xK_p), spawn "/home/tim/.dotfiles/util/dmenu_run")]
+ ((modm, xK_p), spawn "/home/mark/.dotfiles/util/dmenu_run")]
 
 myManageHooks :: [ManageHook]
 myManageHooks =
@@ -58,7 +58,7 @@ myLayout = chatLayout $ videoLayout $ defaultLayout
 
 main :: IO ()
 main = do
-  xmproc <- spawnPipe "/usr/bin/xmobar /home/tim/.xmobarrc"
+  xmproc <- spawnPipe "/usr/bin/xmobar /home/mark/.xmobarrc"
   xmonad $ defaultConfig {
     keys = myKeys <+> keys defaultConfig
     , terminal = "urxvt"
