@@ -1,16 +1,12 @@
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
 
-
-if [[ -s /etc/bash_completion.d/git ]] ; then source /etc/bash_completion.d/git ; fi
-if [[ -s /usr/local/etc/bash_completion.d/git-completion.bash ]] ; then source /usr/local/etc/bash_completion.d/git-completion.bash ; fi
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 export EDITOR="vim"
 export GIT_EDITOR="vim"
 export GEM_EDITOR="vim"
 export _JAVA_AWT_WM_NONREPARENTING=1
-export CLICOLOR=1
 export PATH=$HOME/.rvm/bin::$PATH
 if [[ -s "$HOME/.bash_private" ]]
 then

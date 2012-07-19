@@ -53,13 +53,5 @@ function prompt_func() {
 }
 
 PROMPT_COMMAND=prompt_func
-
 export CLICOLOR='true'
 export LSCOLORS="gxfxcxdxbxegedabagacad"
-if [ -f `brew --prefix`/etc/bash_completion ]; then
- `brew --prefix`/etc/bash_completion
-fi
-
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM
-
-PATH=$PATH:$HOME/bin:$HOME/.rvm/bin # Add RVM to PATH for scripting
