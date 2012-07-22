@@ -15,5 +15,5 @@ Config { font = "xft:Mensch:pixelsize=12:antialias=true:hinting=true"
                     ]
        , sepChar = "%"
        , alignSep = "}{"
-       , template = "%StdinReader% }{ %cpu% | %memory% * %swap% | %eth0% * %wlan0% | %battery% <fc=#268bf2>%date%</fc>"
+       , template = "%StdinReader% }{ %cpu% | %memory% * %swap% | %eth0% * %wlan0% | <fc=#268bf2>%date%</fc>"
        }
