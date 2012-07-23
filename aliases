@@ -12,9 +12,10 @@ alias sl="ls"
 alias la="ls -la"
 alias al="ls -la"
 alias lr="ls -lart"
-alias dev="cd ~/dev"
-alias csearch="cd ~/dev/csearch"
-alias msp="cd ~/dev/msp"
+alias dev="cd ~/dev && clear"
+alias dotfiles="cd ~/.dotfiles && clear"
+alias csearch="cd ~/dev/csearch && clear"
+alias msp="cd ~/dev/msp && clear"
 
 alias gst='git status '
 alias ga='git add '
