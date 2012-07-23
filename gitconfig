@@ -1,6 +1,7 @@
 [user]
         name=Mark Coleman
-        email=m@rkcoleman.co.uk
+        email=mark.coleman@mediasp.com
+        #email=m@rkcoleman.co.uk
 [color]
         diff = auto
         status = auto
@@ -25,3 +26,14 @@
         changed = green
         untracked = cyan
 
+[alias]
+        panic = !tar cvf ../git_panic.tar *
+        co = checkout
+        ci = commit
+        ciam = commit -am
+        cis = commit -s
+        br = branch
+        st = status
+        rb = rebase
+        fix = commit --amend -C HEAD-
+        lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative

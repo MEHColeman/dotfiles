@@ -16,12 +16,16 @@ alias dev="cd ~/dev"
 alias csearch="cd ~/dev/csearch"
 alias msp="cd ~/dev/msp"
 
-alias gs='git status '
+alias gst='git status '
 alias ga='git add '
-alias gb='git branch '
+alias gbr='git branch '
 alias gd='git diff'
 alias gdc='git diff --cached'
-alias go='git checkout '
+alias gco='git checkout '
+alias gci='git commit '
+alias gcs='git commit -s'
+alias gcm='git commit -m'
+alias gcam='git commit -am'
 alias gk='gitk --all&'
 alias gx='gitx --all'
 
