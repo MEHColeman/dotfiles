@@ -1,5 +1,6 @@
-#include "/home/mark/.dotfiles/lib/solarized/xresources-colors-solarized/Xresources"
-
+include "/home/mark/.dotfiles/lib/solarized/xresources-colors-solarized/Xresources"
+xterm*dynamicColors: true
+URxvt*dynamicColors: on
 URxvt.depth: 32
 URxvt*saveLines: 12000
 URxvt*font: xft:Mensch:pixelsize=14:antialias=true:hinting=true
