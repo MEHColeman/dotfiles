@@ -1,4 +1,4 @@
-Config { font = "xft:Mensch:pixelsize=12:antialias=true:hinting=true"
+Config { font = "xft:Inconsolata:pixelsize=12:antialias=true:hinting=true"
        , bgColor = "#073642"
        , fgColor = "#957b83"
        , position = TopW L 90
@@ -15,5 +15,5 @@ Config { font = "xft:Mensch:pixelsize=12:antialias=true:hinting=true"
                     ]
        , sepChar = "%"
        , alignSep = "}{"
-       , template = "%StdinReader% }{ %cpu% | %memory% * %swap% | %eth0% * %wlan0% | %battery% <fc=#268bf2>%date%</fc>"
+       , template = "%StdinReader% }{ %cpu% | %memory% * %swap% | %eth0% * %wlan0% | <fc=#268bf2>%date%</fc>"
        }

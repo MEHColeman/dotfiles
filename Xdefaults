@@ -3,10 +3,12 @@ xterm*dynamicColors: true
 URxvt*dynamicColors: on
 URxvt.depth: 32
 URxvt*saveLines: 12000
-URxvt*font: xft:Mensch:pixelsize=14:antialias=true:hinting=true
-URxvt*boldFont: xft:Mensch:pixelsize=14:antialias=true:hinting=true
+URxvt*font: xft:Inconsolata:pixelsize=16:antialias=true:hinting=true
+URxvt*boldFont: xft:Inconsolata:pixelsize=16:antialias=true:hinting=true
 URxvt*scrollBar: true
 URxvt*scrollBar_right: true
 URXvt*scrollColor: S_base02
 URxvt*scrollstyle: plain
 URxvt*letterSpace: -1
+xterm*faceName: Inconsolata
+xterm*faceSize: 16

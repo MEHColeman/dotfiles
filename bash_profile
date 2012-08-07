@@ -8,6 +8,7 @@ export GIT_EDITOR="vim"
 export GEM_EDITOR="vim"
 export _JAVA_AWT_WM_NONREPARENTING=1
 export PATH=$HOME/.dynamic-colors/bin:$HOME/.rvm/bin:$PATH
+
 if [[ -s "$HOME/.bash_private" ]]
 then
   source "$HOME/.bash_private"
