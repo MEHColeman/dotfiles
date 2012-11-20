@@ -11,7 +11,7 @@ import XMonad.Layout.IM
 import XMonad.Layout.Grid
 import XMonad.Layout.Tabbed
 import Data.Ratio ((%))
-import XMonad.Hooks.FadeInactive
+--import XMonad.Hooks.FadeInactive
 import XMonad.Hooks.SetWMName
 import XMonad.Layout.PerWorkspace
 import XMonad.Util.Run(spawnPipe)
@@ -29,11 +29,8 @@ myManageHooks =
   , isFullscreen --> doFullFloat
   , className =? "Chromium-browser" --> viewShift "1:web"
   , className =? "Chrome-browser" --> viewShift "1:web"
-  --, className =? "Gnome-terminal" --> doShift "2:term"
-  , appName   =? "vim" --> viewShift "3:vim"
   , className =? "Evince" --> viewShift "4:read"
   , className =? "MendeleyDesktop" --> viewShift "4:read"
-  , className =? "psi" --> viewShift "5:chat"
   , className =? "pidgin" --> viewShift "5:chat"
   , className =? "Gajim" --> viewShift "5:chat"
   , className =? "Skype" --> viewShift "5:chat"
@@ -41,7 +38,6 @@ myManageHooks =
   , appName   =? "mutt" --> viewShift "6:mail"
   , appName   =? "icedove" --> viewShift "6:mail"
   , className =? "Rhythmbox" --> viewShift "7:music"
-  , className =? "Spotify" --> viewShift "7:music"
   , className =? "Gmpc" --> viewShift "7:music"
   , className =? "Vlc" --> viewShift "8:video"
   , manageDocks
@@ -67,7 +63,7 @@ main = do
     , terminal = "urxvt"
     , workspaces = ["1:web", "2:term", "3:vim", "4:read", "5:chat", "6:mail", "7:music", "8:video", "9", "0"]
     , normalBorderColor = "#002b36"
-    , focusedBorderColor = "#839496"
+    , focusedBorderColor = "#a3b4b6"
     , borderWidth = 1
     , manageHook = composeAll myManageHooks
     , layoutHook = myLayout

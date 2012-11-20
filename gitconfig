@@ -37,3 +37,5 @@
         rb = rebase
         fix = commit --amend -C HEAD-
         lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+[push]
+	default = current

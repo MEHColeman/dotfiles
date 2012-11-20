@@ -5,7 +5,6 @@ alias la='ls -lart'
 alias less='less -R'
 alias ack='ack-grep'
 alias lock='xscreensaver-command -lock'
-alias canhaz='sudo apt-get install'
 
 alias s="ls"
 alias sl="ls"
@@ -16,6 +15,7 @@ alias dev="cd ~/dev && clear"
 alias dotfiles="cd ~/.dotfiles && clear"
 alias csearch="cd ~/dev/csearch && clear"
 alias msp="cd ~/dev/msp && clear"
+alias deb='ssh -A 192.168.56.101'
 
 alias gst='git status '
 alias ga='git add '
