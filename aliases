@@ -11,10 +11,10 @@ alias sl="ls"
 alias la="ls -la"
 alias al="ls -la"
 alias lr="ls -lart"
-alias dev="cd ~/dev && clear"
-alias dotfiles="cd ~/.dotfiles && clear"
-alias csearch="cd ~/dev/csearch && clear"
-alias msp="cd ~/dev/msp && clear"
+alias dev="cd ~/dev"
+alias dotfiles="cd ~/.dotfiles"
+alias csearch="cd ~/dev/csearch"
+alias msp="cd ~/dev/msp"
 alias deb='ssh -A 192.168.56.101'
 
 alias gst='git status '
