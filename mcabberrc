@@ -508,3 +508,13 @@ bind 514 = buffer down
 
 # Sample alias to join mcabber channel with "/jmc"
 #alias jmc = room join mcabber@conf.lilotux.net
+
+set ssl=0
+set ssl_ignore_checks = 1
+set port = 5222
+
+alias rmsp = roster search msp@conference
+alias rmsd = roster search msp-dev@conference
+
+alias jmsp = room join msp@conference.jabber.playlouder.com mark
+alias jmsd = room join msp-dev@conference.jabber.playlouder.com mark
