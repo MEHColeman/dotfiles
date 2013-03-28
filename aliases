@@ -18,6 +18,9 @@ alias csearch="cd ~/dev/csearch"
 alias msp="cd ~/dev/msp"
 alias deb='ssh -A 192.168.56.101'
 
+alias ffs=sudo
+alias please=sudo
+
 alias gst='git status '
 alias ga='git add '
 alias gbr='git branch '
