@@ -60,17 +60,17 @@ main = do
   xmproc <- spawnPipe "/usr/bin/xmobar /home/mark/.xmobarrc"
   xmonad $ defaultConfig {
     keys = myKeys <+> keys defaultConfig
-    , terminal = "urxvt"
+    , terminal = "gnome-terminal"
     , workspaces = ["1:web", "2:term", "3:vim", "4:read", "5:chat", "6:mail", "7:music", "8:video", "9", "0"]
-    , normalBorderColor = "#002b36"
-    , focusedBorderColor = "#a3b4b6"
+    , normalBorderColor = "#000000"
+    , focusedBorderColor = "#f3b4b6"
     , borderWidth = 1
     , manageHook = composeAll myManageHooks
     , layoutHook = myLayout
     , logHook    = dynamicLogWithPP xmobarPP {
        ppOutput = hPutStrLn xmproc,
-       ppTitle = xmobarColor "#2aa198" "" . shorten 50,
-       ppCurrent = xmobarColor "#268bd2" "" . wrap "[" "]",
+       ppTitle = xmobarColor "#aa2198" "" . shorten 50,
+       ppCurrent = xmobarColor "#862bd2" "" . wrap "[" "]",
        ppUrgent = xmobarColor "#dc322f" ""
     }
   }
