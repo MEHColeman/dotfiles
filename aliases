@@ -1,4 +1,5 @@
-alias gc='google-chrome >/dev/null 2>/dev/null &'
+alias gc='chromium >/dev/null 2>/dev/null &'
+alias realias="${EDITOR:-vim} ~/.aliases; source ~/.aliases"
 
 alias la='ls -lart'
 
@@ -15,6 +16,7 @@ alias dev="cd ~/dev"
 alias notes="cd ~/dev/notes"
 alias dotfiles="cd ~/.dotfiles"
 alias csearch="cd ~/dev/csearch"
+alias sonos="cd ~/dev/msp/sonos"
 alias msp="cd ~/dev/msp"
 alias deb='ssh -A 192.168.56.101'
 

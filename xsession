@@ -5,7 +5,7 @@ xrdb -merge ~/.dotfiles/lib/solarized/xresources-colors-solarized/Xresources
 xrdb -merge ~/.Xdefaults
 # setxkbmap us -variant colemak
 pidgin &
-google-chrome &
+chromium &
 icedove &
 gnome-do 2>/dev/null >/dev/null &
 urxvt -bg black -fg white &
