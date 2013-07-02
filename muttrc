@@ -1,6 +1,13 @@
 set record="=Sent"
 set postponed="=Drafts"
 set editor="vim"
+set ssl_starttls=yes
+set ssl_force_tls=yes
+set imap_check_subscribed
+set mail_check=60
+set header_cache=~/.hcache
+set net_inc=5
+
 mailboxes =INBOX
 set realname="Mark Coleman"
 set from="mark.coleman@mediasp.com"
