@@ -19,6 +19,7 @@ alias csearch="cd ~/dev/csearch"
 alias sonos="cd ~/dev/msp/sonos"
 alias msp="cd ~/dev/msp"
 alias deb='ssh -A 192.168.56.101'
+alias pssh='parallel-ssh -t-1 -P'
 
 alias ffs=sudo
 alias please=sudo
