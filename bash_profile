@@ -59,6 +59,10 @@ case "$TERM" in
     ;;
 esac
 
+spod() { 
+  curl -s -k -F "content=<${1--}" -F ttl=604800 -w "%{redirect_url}\n" -o /dev/null https://spodder.com/ 
+}
+
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
   test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
