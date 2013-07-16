@@ -10,3 +10,6 @@
 [submodule "dynamic-colors"]
 	path = dynamic-colors
 	url = https://github.com/sos4nt/dynamic-colors.git
+[submodule "oh-my-zsh"]
+	path = oh-my-zsh
+	url = https://github.com/robbyrussell/oh-my-zsh.git
