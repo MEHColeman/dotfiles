@@ -1,7 +1,7 @@
+[include]
+        path=~/.git_config.local
 [user]
         name=Mark Coleman
-        email=mark.coleman@mediasp.com
-        #email=m@rkcoleman.co.uk
 [color]
         diff = auto
         status = auto
@@ -35,7 +35,19 @@
         br = branch
         st = status
         rb = rebase
+        df = diff
         fix = commit --amend -C HEAD-
         lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+        pl = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+        lgp = log -p
+        type = cat-file -t
+        dump = cat-file -p
+        unstage = reset HEAD --
+
 [push]
 	default = current
+
+[core]
+  whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
+  editor = tvim -f
+	excludesfile = ~/.gitignore_global
