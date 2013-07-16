@@ -4,3 +4,12 @@
 [submodule "oh-my-zsh"]
 	path = oh-my-zsh
 	url = https://github.com/robbyrussell/oh-my-zsh.git
+[submodule "janus/syntastic"]
+	path = janus/syntastic
+	url = https://github.com/scrooloose/syntastic.git
+[submodule "janus/vim-gitgutter"]
+	path = janus/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter.git
+[submodule "janus/command-t"]
+	path = janus/command-t
+	url = https://github.com/wincent/Command-T.git
