@@ -7,3 +7,5 @@ vim/view
 vim/.netrwhist
 config/spotify
 config/Trolltech.conf
+aliases.local
+bash_profile.local

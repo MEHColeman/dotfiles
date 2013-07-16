@@ -9,9 +9,9 @@ export GEM_EDITOR="vim"
 export _JAVA_AWT_WM_NONREPARENTING=1
 export PATH=$HOME/.dynamic-colors/bin:$HOME/.rvm/bin:$HOME/bin:/opt/node/bin:$PATH
 
-if [[ -s "$HOME/.bash_private" ]]
+if [[ -s "$HOME/.bash_profile.local" ]]
 then
-  source "$HOME/.bash_private"
+  source "$HOME/.bash__profile.local"
 fi
 if [[ -s "$HOME/.prompt" ]]
 then
@@ -21,7 +21,10 @@ if [[ -s "$HOME/.aliases" ]]
 then
   source "$HOME/.aliases"
 fi
-
+if [[ -s "$HOME/.aliases.local" ]]
+then
+  source "$HOME/.aliases.local"
+fi
 
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
@@ -31,8 +34,8 @@ HISTCONTROL=ignoreboth
 shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=1000
-HISTFILESIZE=2000
+HISTSIZE=10000
+HISTFILESIZE=20000
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
@@ -58,10 +61,6 @@ case "$TERM" in
   *)
     ;;
 esac
-
-spod() { 
-  curl -s -k -F "content=<${1--}" -F ttl=604800 -w "%{redirect_url}\n" -o /dev/null https://spodder.com/ 
-}
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then

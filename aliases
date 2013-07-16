@@ -1,24 +1,17 @@
-alias gc='chromium >/dev/null 2>/dev/null &'
 alias realias="${EDITOR:-vim} ~/.aliases; source ~/.aliases"
-
-alias la='ls -lart'
 
 alias less='less -R'
 alias ack='ack-grep'
-alias lock='xscreensaver-command -lock'
 
 alias s="ls"
 alias sl="ls"
 alias la="ls -la"
 alias al="ls -la"
 alias lr="ls -lart"
+alias la='ls -lart'
 alias dev="cd ~/dev"
 alias notes="cd ~/dev/notes"
 alias dotfiles="cd ~/.dotfiles"
-alias csearch="cd ~/dev/csearch"
-alias sonos="cd ~/dev/msp/sonos"
-alias msp="cd ~/dev/msp"
-alias deb='ssh -A 192.168.56.101'
 alias pssh='parallel-ssh -t-1 -P'
 
 alias ffs=sudo
@@ -36,7 +29,6 @@ alias gcm='git commit -m'
 alias gcam='git commit -am'
 alias gk='gitk --all&'
 alias gx='gitx --all'
-
 alias got='git '
 alias get='git '
 
