@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 require 'fileutils'
-SKIP_PATTERNS=[/^\./, /^bin$/, /^lib$/, /^util$/, /^README.md$/]
+SKIP_PATTERNS=[/^\./, /^bin$/, /^lib$/, /^util$/, /^README.md$/, /^BASH_PROFILE_NOTES.txt$/]
 install_dir = File.expand_path(File.join(File.dirname(__FILE__), ".."))
 home = ENV['HOME']
 Dir.new(install_dir).each do |filename|
