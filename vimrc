@@ -72,7 +72,9 @@ filetype plugin indent on     " required!
 " see :h vundle for more details or wiki for FAQ
 " NOTE: comments after Bundle command are not allowed..
 
-
+" KEYS
+" ----
+"
 " Change movement keys for Colemak keyboard
 noremap h k
 noremap j h
@@ -84,6 +86,12 @@ map <leader>v :view %%
 
 map <leader>gr :topleft :split config/routes.rb<cr>
 map <leader>gg :topleft 100 :split Gemfile<cr>
+
+map <leader>t :CtrlP<cr>
+map <leader>n :NERDTree<cr>
+
+set tabstop =2
+set sw=2
 
 set winwidth=84
 " We have to have a winheight bigger than we want to set winminheight. But if
@@ -98,6 +106,13 @@ let &colorcolumn=join(range(81,337),",")
 hi ColorColumn guibg=#2d2d2d ctermbg=Grey
 
 runtime macros/matchit.vim
+
+" ADDON-OPTIONS
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/]\.(git|hg|svn)$',
+  \ 'file': '\v\.(exe|so|dll)$',
+  \ 'link': 'some_bad_symbolic_links',
+  \ }
 
 function! <SID>StripTrailingWhitespaces()
   let l = line(".")
