@@ -1,0 +1,11 @@
+" Change movement keys for Colemak keyboard
+noremap h k
+noremap j h
+noremap k j
+
+cnoremap %% <C-R>=expand('%:h').'/'<cr>
+map <leader>e :edit %%
+map <leader>v :view %%
+
+map <leader>gr :topleft :split config/routes.rb<cr>
+map <leader>gg :topleft 100 :split Gemfile<cr>
