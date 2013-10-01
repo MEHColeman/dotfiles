@@ -1,13 +1,29 @@
 #!/usr/bin/env ruby
 require 'fileutils'
 SKIP_PATTERNS=[/^\./, /^bin$/, /^lib$/, /^util$/, /^README.md$/, /^BASH_PROFILE_NOTES.txt$/]
-install_dir = File.expand_path(File.join(File.dirname(__FILE__), ".."))
-home = ENV['HOME']
-Dir.new(install_dir).each do |filename|
- home_file_name =  File.join(home, ".#{filename}")
- checked_in_file_name = File.join(install_dir, filename)
- FileUtils.remove_entry home_file_name, true
- FileUtils.ln_sf(checked_in_file_name,home_file_name) unless SKIP_PATTERNS.map {|pattern| filename.match pattern}.compact.any? ||File.exists?(home_file_name)
+install_from_dir = File.expand_path(File.join(File.dirname(__FILE__), ".."))
+
+def op_is_ok?(filename, home_filename)
+  !File.exists?(home_filename) &&
+    !skip?(filename)
 end
 
+def skip?(filename)
+  SKIP_PATTERNS.map {|pattern| filename.match pattern}.compact.any?
+end
+
+home = ENV['HOME']
+puts "install_from_dir = #{install_from_dir}"
+puts "home = #{home}"
+Dir.new(install_from_dir).each do |filename|
+ home_filename =  File.join(home, ".#{filename}")
+ dotfile_filename = File.join(install_from_dir, filename)
+
+ if op_is_ok?(filename, home_filename)
+  puts "will remove: home_filename = #{home_filename}"
+  puts "dotfile_filename = #{dotfile_filename}"
+  FileUtils.remove_entry home_filename, true
+  FileUtils.ln_sf(dotfile_filename,home_filename)
+ end
+end
 
