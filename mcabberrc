@@ -5,7 +5,8 @@
 # - Empty lines and lines beginning with a '#' are ignored.
 
 # Please provide your Jabber (XMPP) identifier:
-set jid = mark@jabber.playlouder.com
+set jid = mark@openfire.openimp.net
+#set jid = mark@jabber.playlouder.com
 
 # If password is not given, it will be interactively asked for.
 # Note: if the password contains leading or trailing spaces, you must
@@ -14,8 +15,8 @@ set jid = mark@jabber.playlouder.com
 
 # You can provide a server name if you want mcabber to connect
 # to a specific server.
-set server = jabber.playlouder.com
-
+#set server = jabber.playlouder.com
+set username = mark@openfire.openimp.net
 # If port is not given, mcabber will try to find it out.
 #set port = 5223
 
@@ -509,7 +510,7 @@ bind 514 = buffer down
 # Sample alias to join mcabber channel with "/jmc"
 #alias jmc = room join mcabber@conf.lilotux.net
 #
-set server = jabber.playlouder.com
+set server = openfire.openimp.net
 
 set ssl=0
 set ssl_ignore_checks = 1
@@ -518,5 +519,5 @@ set port = 5222
 alias rmsp = roster search msp@conference
 alias rmsd = roster search msp-dev@conference
 
-alias jmsp = room join msp@conference.jabber.playlouder.com mark
-alias jmsd = room join msp-dev@conference.jabber.playlouder.com mark
+alias jmsp = room join msp@conference.openfire.openimp.net mark
+alias jmsd = room join msp-dev@conference.openfire.openimp.net mark
