@@ -9,15 +9,15 @@ alias lr="ls -lart"
 alias la='ls -lart'
 
 alias dev="cd ~/dev"
-alias ddev="cd ~/Dropbox/dev"
+alias msp="cd ~/dev/msp"
 
-alias hugo="cd ~/Dropbox/dev/projects/hugo"
-alias seven="cd ~/Dropbox/dev/projects/hugo/seven"
-alias lux="cd ~/Dropbox/dev/projects/hugo/luxury_padel"
-alias mega="cd ~/Dropbox/dev/projecs/mega_productions"
-alias bw="cd ~/Dropbox/dev/projects/bw"
+alias hugo="cd ~/dev/bw/projects/hugo"
+alias seven="cd ~/dev/bw/projects/hugo/seven"
+alias lux="cd ~/dev/bw/projects/hugo/luxury_padel"
+alias mega="cd ~/dev/bw/projecs/mega_productions"
+alias bw="cd ~/dev/bw/projects/bw"
 
-alias notes="cd ~/dev/notes"
+alias notes="cd ~/notes"
 alias dotfiles="cd ~/.dotfiles"
 alias pssh='parallel-ssh -t-1 -P'
 
