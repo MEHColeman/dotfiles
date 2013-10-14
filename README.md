@@ -9,7 +9,7 @@ I use .local files and .gitignore for stuff useful for only one environment.
 add something that allows you to change the colour scheme, light to
 dark.
 
-## To add git reposi
+## To add git repos
 Remember to add them as submodules:
 git submodule add repo filepath
 git submodule add https://github.com/wincent/Command-T.git janus/command-t
