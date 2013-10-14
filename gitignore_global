@@ -8,6 +8,10 @@ Icon?
 .Spotlight-V100
 .Trashes
 
+# Development
 .rvmrc
 .ruby-version
 .ruby-gemset
+
+# btsync directory
+.sync
