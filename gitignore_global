@@ -15,3 +15,5 @@ Icon?
 
 # btsync directory
 .sync
+.SyncID
+.SyncIgnore
