@@ -25,6 +25,9 @@ Bundle 'tpope/vim-sensible'
 Bundle 'tpope/vim-surround'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'vim-scripts/vroom'
+" cd ~/.vim/bundle/YouCompleteMe
+" ./install.sh [--clang-completer]
+" to complete update/installation
 
 " Language support
 " (I found these via carlhuda/janus)
