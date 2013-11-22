@@ -71,6 +71,9 @@ endfunction
 
 "autocmd FileType c,cpp,java,php,ruby,python
 autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
+autocmd BufRead,BufNewFile *.md setlocal spell
+autocmd BufRead,BufNewFile *.txt setlocal spell
+autocmd FileType gitcommit setlocal spell
 
 " I think you need to have the rubocop gem installed for this...
 let g:syntastic_ruby_checkers=['rubocop']
