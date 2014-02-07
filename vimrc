@@ -10,7 +10,8 @@ source ~/.vimrc.add-ons
 source ~/.vimrc.key_mappings
 
 map <leader>t :CtrlP<cr>
-map <leader>n :NERDTree<cr>
+map <leader>n :NERDTreeTabsToggle<cr>
+map <leader>h :NERDTree<cr>
 
 set tabstop=2  " a tab is two spaces
 set sw=2
