@@ -10,11 +10,8 @@ alias la='ls -lart'
 
 alias dev="cd ~/dev"
 alias msp="cd ~/dev/msp"
+alias sonos="cd ~/dev/msp/sonos"
 
-alias hugo="cd ~/dev/bw/projects/hugo"
-alias seven="cd ~/dev/bw/projects/hugo/seven"
-alias lux="cd ~/dev/bw/projects/hugo/luxury_padel"
-alias mega="cd ~/dev/bw/projecs/mega_productions"
 alias bw="cd ~/dev/bw/projects/bw"
 
 alias notes="cd ~/notes"
