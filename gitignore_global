@@ -10,7 +10,6 @@ Icon?
 
 # Development
 .rvmrc
-.ruby-version
 .ruby-gemset
 bundler/*
 
