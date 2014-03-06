@@ -39,6 +39,6 @@ alias gx='gitx --all'
 alias got='git '
 alias get='git '
 
-alias bi='bundle check && bundle install'
-alias bii='bundle install'
+alias bi='bundle check && bundle install --binstubs bundler/bin --standalone'
+alias bii='bundle install --binstubs bundler/bin --standalone'
 alias be='bundle exec'

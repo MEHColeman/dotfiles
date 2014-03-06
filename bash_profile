@@ -5,7 +5,7 @@ export EDITOR="vim"
 export GIT_EDITOR="vim"
 export GEM_EDITOR="vim"
 export _JAVA_AWT_WM_NONREPARENTING=1
-export PATH=$HOME/bin:/opt/node/bin:$PATH
+export PATH=$HOME/bin:bundler/bin:/opt/node/bin:$PATH
 
 if [[ -s "$HOME/.bash_profile.local" ]]
 then
