@@ -517,7 +517,6 @@ set ssl_ignore_checks = 1
 set port = 5222
 
 alias rmsp = roster search msp@conference
-alias rmsd = roster search msp-dev@conference
+alias rmsd = roster search dev@conference
 
-alias jmsp = room join msp@conference.openfire.openimp.net mark
-alias jmsd = room join msp-dev@conference.openfire.openimp.net mark
+alias jmsp = room join dev@conference.openfire.openimp.net mark
