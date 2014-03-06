@@ -12,3 +12,4 @@ aliases.local
 gitconfig.local
 vimrc.local
 vim/bundle
+vim/_temp
