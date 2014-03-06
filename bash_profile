@@ -1,13 +1,11 @@
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-
 export EDITOR="vim"
 export GIT_EDITOR="vim"
 export GEM_EDITOR="vim"
 export _JAVA_AWT_WM_NONREPARENTING=1
-export PATH=$HOME/.rvm/bin:$HOME/bin:/opt/node/bin:$PATH
+export PATH=$HOME/bin:/opt/node/bin:$PATH
 
 if [[ -s "$HOME/.bash_profile.local" ]]
 then
@@ -96,3 +94,6 @@ then
   echo "Screen failed! continuing with normal bash startup"
 fi
 # [end of auto-screen snippet]
+
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
