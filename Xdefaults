@@ -12,3 +12,5 @@ URxvt*scrollstyle: plain
 URxvt*letterSpace: -1
 xterm*faceName: Inconsolata
 xterm*faceSize: 16
+xterm*termName: xterm-256color
+*customization: -color

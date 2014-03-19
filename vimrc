@@ -2,6 +2,9 @@ set encoding=utf-8
 
 let mapleader = ","
 let g:airline_powerline_fonts=1
+if $COLORTERM == 'gnome-terminal'
+  set t_Co=256
+endif
 
 source ~/.vimrc.add-ons
 source ~/.vimrc.key_mappings
@@ -29,18 +32,15 @@ set listchars+=precedes:<         " The character to show in the last column whe
                                   " off and the line continues beyond the left of the screen
 
 "" Searching
-""
-
 "set hlsearch    " highlight matches
 set incsearch   " incremental searching
 set ignorecase  " searches are case insensitive...
 set smartcase   " ... unless they contain at least one capital letter
 
 "" Backup and swap files
-""
 
-set backupdir^=~/.vim/_backup//    " where to put backup files.
-set directory^=~/.vim/_temp//      " where to put swap files.
+set backupdir=$HOME/.vim/_backup//    " where to put backup files.
+set directory=$HOME/.vim/_temp//      " where to put swap files.
 
 " We have to have a winheight bigger than we want to set winminheight. But if
 " we set winheight to be huge before winminheight, the winminheight set will
@@ -77,5 +77,23 @@ autocmd FileType gitcommit setlocal spell
 
 " I think you need to have the rubocop gem installed for this...
 let g:syntastic_ruby_checkers=['rubocop']
+
+let g:daylight_morning_color_gvim = "github"
+let g:daylight_afternoon_color_gvim = "github"
+let g:daylight_evening_color_gvim = "railscasts"
+let g:daylight_late_color_gvim = "railscasts"
+
+let g:daylight_morning_color_term = "github"
+let g:daylight_afternoon_color_term = "github"
+let g:daylight_evening_color_term = "railscasts"
+let g:daylight_late_color_term = "railscasts"
+
+let g:daylight_evening_color_term = "Tomorrow-Night-Bright"
+let g:daylight_late_color_term = "Tomorrow-Night"
+
+let g:daylight_morning_hour = 6
+let g:daylight_afternoon_hour = 12
+let g:daylight_evening_hour = 18
+let g:daylight_late_hour = 22
 
 source ~/.vimrc.local
