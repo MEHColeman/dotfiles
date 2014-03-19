@@ -39,7 +39,6 @@ set ignorecase  " searches are case insensitive...
 set smartcase   " ... unless they contain at least one capital letter
 
 "" Backup and swap files
-
 set backupdir=$HOME/.vim/_backup//    " where to put backup files.
 set directory=$HOME/.vim/_temp//      " where to put swap files.
 
