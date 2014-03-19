@@ -43,6 +43,7 @@
         type = cat-file -t
         dump = cat-file -p
         unstage = reset HEAD --
+	d = difftool
 
 [push]
 	default = current
@@ -51,3 +52,7 @@
   whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
   editor = tvim -f
 	excludesfile = ~/.gitignore_global
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false
