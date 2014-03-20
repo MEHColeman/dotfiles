@@ -11,5 +11,5 @@ bash_profile.local
 aliases.local
 gitconfig.local
 vimrc.local
-vim/bundle
+vim/bundle/**
 vim/_temp
