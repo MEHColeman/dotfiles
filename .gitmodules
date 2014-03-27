@@ -1,9 +1,6 @@
 [submodule "lib/solarized"]
 	path = lib/solarized
 	url = git://github.com/altercation/solarized.git
-[submodule "oh-my-zsh"]
-	path = oh-my-zsh
-	url = https://github.com/robbyrussell/oh-my-zsh.git
 [submodule "janus/syntastic"]
 	path = janus/syntastic
 	url = https://github.com/scrooloose/syntastic.git
