@@ -2,6 +2,7 @@
 [ -z "$PS1" ] && return
 
 source $HOME/.shell-profile
+source $HOME/.bash_aliases
 
 if [[ -s "$HOME/.prompt" ]]
 then
