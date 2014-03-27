@@ -1,27 +1,11 @@
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
 
-export EDITOR="vim"
-export GIT_EDITOR="vim"
-export GEM_EDITOR="vim"
-export _JAVA_AWT_WM_NONREPARENTING=1
-export PATH=$HOME/bin:bundler/bin:/opt/node/bin:$PATH
+source $HOME/.shell-profile
 
-if [[ -s "$HOME/.bash_profile.local" ]]
-then
-  source "$HOME/.bash_profile.local"
-fi
 if [[ -s "$HOME/.prompt" ]]
 then
   source "$HOME/.prompt"
-fi
-if [[ -s "$HOME/.aliases" ]]
-then
-  source "$HOME/.aliases"
-fi
-if [[ -s "$HOME/.aliases.local" ]]
-then
-  source "$HOME/.aliases.local"
 fi
 
 # don't put duplicate lines or lines starting with space in the history.
@@ -78,22 +62,3 @@ fi
 if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
   . /etc/bash_completion
 fi
-
-# Auto-screen invocation. see: http://taint.org/wk/RemoteLoginAutoScreen
-# if we're coming from a remote SSH connection, in an interactive session
-# then automatically put us into a screen(1) session.   Only try once
-# -- if $STARTED_SCREEN is set, don't try it again, to avoid looping
-# if screen fails for some reason.
-if [ "$PS1" != "" -a "${STARTED_SCREEN:-x}" = x -a "${SSH_TTY:-x}" != x ]
-then
-  STARTED_SCREEN=1 ; export STARTED_SCREEN
-  [ -d $HOME/lib/screen-logs ] || mkdir -p $HOME/lib/screen-logs
-  sleep 1
-  screen -RR && exit 0
-  # normally, execution of this rc script ends here...
-  echo "Screen failed! continuing with normal bash startup"
-fi
-# [end of auto-screen snippet]
-
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
