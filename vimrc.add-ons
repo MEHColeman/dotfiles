@@ -22,6 +22,7 @@ Bundle 'jpalardy/vim-slime'
 Bundle 'jpo/vim-railscasts-theme'
 Bundle 'kien/ctrlp.vim'
 Bundle 'Lokaltog/vim-easymotion'
+Bundle 'majutsushi/tagbar'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/syntastic'
@@ -64,6 +65,7 @@ Bundle 'timcharper/textile.vim'
 " vim-scripts repos
 "Bundle 'L9'
 Bundle 'AutoTag'
+Bundle 'taglist.vim'
 " non github repos
 " git repos on your local machine (ie. when working on your own plugin)
 "Bundle 'file:///Users/gmarik/path/to/plugin'

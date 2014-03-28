@@ -12,6 +12,8 @@ source ~/.vimrc.key_mappings
 map <leader>t :CtrlP<cr>
 map <leader>n :NERDTreeTabsToggle<cr>
 map <leader>h :NERDTree<cr>
+map <leader>. :CtrlPTag<cr>
+map <leader>b :TagbarToggle<cr>
 
 set tabstop=2  " a tab is two spaces
 set sw=2
@@ -61,6 +63,8 @@ let g:ctrlp_custom_ignore = {
   \ 'file': '\v\.(exe|so|dll)$',
   \ 'link': 'some_bad_symbolic_links',
   \ }
+
+:set tags=./tags;~
 
 function! <SID>StripTrailingWhitespaces()
   let l = line(".")

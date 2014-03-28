@@ -18,3 +18,5 @@ bundler/*
 .SyncID
 .SyncIgnore
 .SyncArchive
+
+tags
