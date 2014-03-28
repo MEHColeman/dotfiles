@@ -9,6 +9,7 @@ source .shell_profile
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 ZSH_THEME="mark"
+DEFAULT_USER="mark"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -51,7 +52,7 @@ ZSH_THEME="mark"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(mark git)
+plugins=(mark gitfast git-extras tmux dirhistory)  #tmuxinator
 
 source $ZSH/oh-my-zsh.sh
 
