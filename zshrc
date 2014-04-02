@@ -1,9 +1,6 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
-# Add paths & configs common to bash and zsh
-source .shell_profile
-
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
@@ -58,8 +55,11 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin"
+export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:$PATH"
 export MANPATH="/usr/local/man:$MANPATH"
+
+# Add paths & configs common to bash and zsh
+source $HOME/.shell_profile
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
