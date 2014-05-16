@@ -12,6 +12,7 @@ Icon?
 .rvmrc
 .ruby-gemset
 bundler/*
+vendor/bundler/*
 
 # btsync directory
 .sync
