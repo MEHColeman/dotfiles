@@ -58,3 +58,5 @@
 	tool = vimdiff
 [difftool]
 	prompt = false
+[branch]
+	autosetupmerge = true
