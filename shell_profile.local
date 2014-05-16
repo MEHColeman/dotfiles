@@ -1,6 +1,4 @@
-# local stuff here, and in aliases.local
-
-BING_APP_ID="gSwxk2YfbWbGThsU482F3zh5WNBqK81NvbotR3ua9H8="
+# local stuff here
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"

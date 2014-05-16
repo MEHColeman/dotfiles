@@ -1,3 +1,5 @@
+# shell profile stuff common to bash and zsh
+
 export EDITOR="vim"
 export GIT_EDITOR="vim"
 export GEM_EDITOR="vim"
@@ -7,6 +9,10 @@ export PATH=$HOME/bin:bundler/bin:/opt/node/bin:$PATH
 if [[ -s "$HOME/.shell_profile.local" ]]
 then
   source "$HOME/.shell_profile.local"
+fi
+if [[ -s "$HOME/.shell_profile.private" ]]
+then
+  source "$HOME/.shell_profile.private"
 fi
 if [[ -s "$HOME/.aliases" ]]
 then
