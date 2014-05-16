@@ -27,6 +27,7 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/syntastic'
 Bundle 'jistr/vim-nerdtree-tabs'
+Bundle 'tpope/vim-abolish'
 Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-eunuch'
@@ -34,7 +35,7 @@ Bundle 'tpope/vim-sensible'
 Bundle 'tpope/vim-surround'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'vim-scripts/colorsupport.vim'
-Bundle 'vim-scripts/vroom'
+Bundle 'skalnik/vim-vroom'
 " cd ~/.vim/bundle/YouCompleteMe
 " ./install.sh [--clang-completer]
 " to complete update/installation
