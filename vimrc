@@ -93,9 +93,6 @@ let g:daylight_afternoon_color_term = "github"
 let g:daylight_evening_color_term = "railscasts"
 let g:daylight_late_color_term = "railscasts"
 
-let g:daylight_evening_color_term = "Tomorrow-Night-Bright"
-let g:daylight_late_color_term = "Tomorrow-Night"
-
 let g:daylight_morning_hour = 6
 let g:daylight_afternoon_hour = 12
 let g:daylight_evening_hour = 18
