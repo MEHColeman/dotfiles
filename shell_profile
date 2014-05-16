@@ -18,10 +18,6 @@ if [[ -s "$HOME/.aliases" ]]
 then
   source "$HOME/.aliases"
 fi
-if [[ -s "$HOME/.aliases.local" ]]
-then
-  source "$HOME/.aliases.local"
-fi
 
 # Auto-screen invocation. see: http://taint.org/wk/RemoteLoginAutoScreen
 # if we're coming from a remote SSH connection, in an interactive session

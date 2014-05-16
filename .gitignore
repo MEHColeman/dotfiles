@@ -11,7 +11,10 @@ config/Trolltech.conf
 bash_profile.local
 aliases.local
 gitconfig.local
+shell_profile.local
 vimrc.local
 vim/bundle/**
+vim/bundle/vundle/**
 vim/_temp
+vim/_backup
 *.private

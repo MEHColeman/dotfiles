@@ -13,3 +13,10 @@ branches onto master as changes occur.
 Currently, the oh-my-zsh directory is independent. It has some custom themes
 and plugins that you'll need!
 
+## Linking files
+Ok, so the branch thing was a failed idea. Now I'm going to use hard links to the appropriate file
+'''
+ln aliases.local.msp_debian aliases.local
+'''
+etc
+

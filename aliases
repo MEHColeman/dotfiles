@@ -1,3 +1,5 @@
+# common aliases
+
 alias less='less -R'
 alias ack='ack-grep'
 
@@ -9,7 +11,7 @@ alias lr="ls -lart"
 alias la='ls -lart'
 
 alias sonos="cd ~/dev/msp/sonos"
-alias dotfiles="cd ~/.dotfiles"
+alias csearch="cd ~/dev/msp/csearch"
 alias pssh='parallel-ssh -t-1 -P'
 
 alias ffs=sudo
@@ -22,3 +24,8 @@ alias get='git '
 alias bi='bundle check && bundle install --binstubs bundler/bin --standalone'
 alias bii='bundle install --binstubs bundler/bin --standalone'
 alias be='bundle exec'
+
+if [[ -s "$HOME/.aliases.local" ]]
+then
+  source "$HOME/.aliases.local"
+fi
