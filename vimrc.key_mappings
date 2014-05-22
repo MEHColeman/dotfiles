@@ -9,3 +9,17 @@ map <leader>v :view %%
 
 map <leader>gr :topleft :split config/routes.rb<cr>
 map <leader>gg :topleft 100 :split Gemfile<cr>
+
+let g:tmux_navigator_no_mappings = 1
+nnoremap <silent> <C-Left> :TmuxNavigateLeft<cr>
+nnoremap <silent> <C-Down> :TmuxNavigateDown<cr>
+nnoremap <silent> <C-Up> :TmuxNavigateUp<cr>
+nnoremap <silent> <C-Right> :TmuxNavigateRight<cr>
+
+nnoremap <silent> <C-j> :TmuxNavigateLeft<cr>
+nnoremap <silent> <C-k> :TmuxNavigateDown<cr>
+nnoremap <silent> <C-h> :TmuxNavigateUp<cr>
+nnoremap <silent> <C-l> :TmuxNavigateRight<cr>
+
+nnoremap <silent> <C-a> :TmuxNavigatePrevious<cr>
+

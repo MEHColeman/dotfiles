@@ -15,6 +15,7 @@ map <leader>h :NERDTree<cr>
 map <leader>. :CtrlPTag<cr>
 map <leader>b :TagbarToggle<cr>
 
+" tmux-vim-navigator bindings - use ctrl-arrows
 set tabstop=2  " a tab is two spaces
 set sw=2
 set shiftwidth=2 " an autoindent (with <<) is two spaces
