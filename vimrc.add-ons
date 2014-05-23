@@ -84,3 +84,5 @@ filetype plugin indent on     " required!
 
 " I think you need to have the rubocop gem installed for this...
 let g:syntastic_ruby_checkers=['rubocop']
+
+let g:slime_target = 'tmux'
