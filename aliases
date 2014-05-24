@@ -25,6 +25,8 @@ alias bi='bundle check && bundle install --binstubs bundler/bin --standalone'
 alias bii='bundle install --binstubs bundler/bin --standalone'
 alias be='bundle exec'
 
+alias tmux='tmux -2'
+
 if [[ -s "$HOME/.aliases.local" ]]
 then
   source "$HOME/.aliases.local"
