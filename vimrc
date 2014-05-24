@@ -24,6 +24,9 @@ set nowrap  " don't wrap lines
 set list " Show invisible characters
 set backspace=indent,eol,start    " backspace through everything in insert mode
 
+" split panes nicely
+set splitbelow
+set splitright
 
 " List chars
 set listchars=""                  " Reset the listchars
