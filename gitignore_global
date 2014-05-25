@@ -13,6 +13,7 @@ Icon?
 .ruby-gemset
 bundler/*
 vendor/bundler/*
+sandi_meter/*
 
 # btsync directory
 .sync
