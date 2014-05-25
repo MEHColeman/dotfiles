@@ -55,7 +55,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:$PATH"
+export PATH="/usr/local/bin:/bin:/usr/sbin:/sbin:/usr/bin:/opt/X11/bin:$PATH"
 export MANPATH="/usr/local/man:$MANPATH"
 
 # Add paths & configs common to bash and zsh
