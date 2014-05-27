@@ -60,3 +60,5 @@
 	prompt = false
 [branch]
 	autosetupmerge = true
+[merge]
+	conflictstyle = diff3
