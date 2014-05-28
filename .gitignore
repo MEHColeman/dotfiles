@@ -13,6 +13,7 @@ aliases.local
 gitconfig.local
 shell_profile.local
 vimrc.local
+tmux.conf.local
 vim/bundle/**
 vim/bundle/vundle/**
 vim/_temp
