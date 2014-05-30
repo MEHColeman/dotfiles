@@ -15,6 +15,11 @@ map <leader>h :NERDTree<cr>
 map <leader>. :CtrlPTag<cr>
 map <leader>b :TagbarToggle<cr>
 
+map <Leader>r :call RunCurrentSpecFile()<CR>
+map <Leader>s :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
+map <Leader>a :call RunAllSpecs()<CR>
+
 " tmux-vim-navigator bindings - use ctrl-arrows
 set tabstop=2  " a tab is two spaces
 set sw=2
