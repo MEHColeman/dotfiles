@@ -14,6 +14,7 @@ Icon?
 bundler/*
 vendor/bundler/*
 sandi_meter/*
+coverage/*
 
 # btsync directory
 .sync
