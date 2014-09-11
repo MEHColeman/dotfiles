@@ -23,3 +23,15 @@ nnoremap <silent> <C-l> :TmuxNavigateRight<cr>
 
 nnoremap <silent> <C-a> :TmuxNavigatePrevious<cr>
 
+" bindings for inlining ruby output, requires seeing_is_believing gem
+nmap <buffer> <F4> <Plug>(seeing-is-believing-run)
+xmap <buffer> <F4> <Plug>(seeing-is-believing-run)
+imap <buffer> <F4> <Plug>(seeing-is-believing-run)
+
+nmap <buffer> <F3> <Plug>(seeing-is-believing-mark)
+xmap <buffer> <F3> <Plug>(seeing-is-believing-mark)
+imap <buffer> <F3> <Plug>(seeing-is-believing-mark)
+
+
+2+2
+

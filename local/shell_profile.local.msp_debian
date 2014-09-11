@@ -2,3 +2,6 @@
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+### Elixir installed in /usr/local/elixir
+export PATH="/usr/local/elixir/bin:$PATH"

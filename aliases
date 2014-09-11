@@ -27,6 +27,8 @@ alias be='bundle exec'
 
 alias tmux='tmux -2'
 
+alias emacs='emacs -nw'
+
 if [[ -s "$HOME/.aliases.local" ]]
 then
   source "$HOME/.aliases.local"
