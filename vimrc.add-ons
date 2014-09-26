@@ -39,6 +39,13 @@ Bundle 'tpope/vim-unimpaired'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'vim-scripts/colorsupport.vim'
 Bundle 'skalnik/vim-vroom'
+
+" snippet support
+Bundle "MarcWeber/vim-addon-mw-utils"
+Bundle "tomtom/tlib_vim"
+Bundle "garbas/vim-snipmate"
+Bundle "honza/vim-snippets"
+
 " cd ~/.vim/bundle/YouCompleteMe
 " ./install.sh [--clang-completer]
 " to complete update/installation
