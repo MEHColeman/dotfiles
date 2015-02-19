@@ -3,6 +3,10 @@ noremap h k
 noremap j h
 noremap k j
 
+" no need for the shift key!
+nnoremap ; :
+nnoremap : ;
+
 cnoremap %% <C-R>=expand('%:h').'/'<cr>
 map <leader>e :edit %%
 map <leader>v :view %%
