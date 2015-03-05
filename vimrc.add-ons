@@ -13,6 +13,7 @@ Bundle 'gmarik/vundle'
 " original repos on github
 Bundle 'airblade/vim-gitgutter'
 Bundle 'bling/vim-airline'
+Bundle 'chrisbra/Recover.vim'
 Bundle 'christoomey/vim-tmux-navigator'
 Bundle 'daf-/vim-daylight'
 Bundle 'endel/vim-github-colorscheme'
