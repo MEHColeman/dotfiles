@@ -11,6 +11,8 @@ Icon?
 # Development
 .rvmrc
 .ruby-gemset
+.bundle/*
+bundle/*
 bundler/*
 vendor/bundler/*
 sandi_meter/*
