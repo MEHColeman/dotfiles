@@ -6,6 +6,9 @@ noremap k j
 " no need for the shift key!
 nnoremap ; :
 
+" use space for a leader key too
+nmap <space> ,
+
 cnoremap %% <C-R>=expand('%:h').'/'<cr>
 map <leader>e :edit %%
 map <leader>v :view %%
