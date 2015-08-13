@@ -20,6 +20,7 @@ alias please=sudo
 alias gitst='git fetch origin && git log HEAD..origin/master --oneline'
 alias got='git '
 alias get='git '
+alias gcm='git commit -m '
 
 alias bi='bundle check && bundle install --binstubs bundler/bin --standalone'
 alias bii='bundle install --binstubs bundler/bin --standalone'
