@@ -61,4 +61,6 @@
 [branch]
 	autosetupmerge = true
 [merge]
-	conflictstyle = diff3
+  conflictstyle = diff3
+[commit]
+  template = ~/.git_commit_template.txt
