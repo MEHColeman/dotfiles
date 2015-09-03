@@ -67,13 +67,6 @@ hi ColorColumn guibg=#2d2d2d ctermbg=Grey
 
 runtime macros/matchit.vim
 
-" ADDON-OPTIONS
-let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/]\.(git|hg|svn)$',
-  \ 'file': '\v\.(exe|so|dll)$',
-  \ 'link': 'some_bad_symbolic_links',
-  \ }
-
 :set tags=./tags;~
 
 function! <SID>StripTrailingWhitespaces()
@@ -89,9 +82,6 @@ autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
 autocmd BufRead,BufNewFile *.md setlocal spell
 autocmd BufRead,BufNewFile *.txt setlocal spell
 autocmd FileType gitcommit setlocal spell
-
-" I think you need to have the rubocop gem installed for this...
-let g:syntastic_ruby_checkers=['rubocop']
 
 let g:daylight_morning_color_gvim = "github"
 let g:daylight_afternoon_color_gvim = "github"
