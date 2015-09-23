@@ -35,5 +35,10 @@ then
 fi
 # [end of auto-screen snippet]
 
+# git command to pull all the branches down
+gitpullall() {
+for remote in `git branch -r`; do git branch --track $remote; done
+}
+
 export PATH="$HOME/.rbenv/shims:$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
