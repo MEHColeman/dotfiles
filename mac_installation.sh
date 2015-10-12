@@ -86,4 +86,6 @@ fonts=(
 echo "installing fonts..."
 brew cask install ${fonts[@]}
 
-git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/vundle
+
+echo "Don't forget to remove the cntl-arrow mac shortcuts so that tmux works nicely"
