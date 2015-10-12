@@ -6,6 +6,7 @@ if $COLORTERM == 'gnome-terminal'
   set t_Co=256
 endif
 
+source ~/.vimrc.vundle
 source ~/.vimrc.add-ons
 source ~/.vimrc.key_mappings
 
