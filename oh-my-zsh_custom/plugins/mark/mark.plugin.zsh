@@ -2,6 +2,10 @@ notes() { vi ~/notes/$1;  }
 _notes() { _files -W ~/notes -/; }
 compdef _notes notes
 
+mgage() { cd ~/dev/mgage/$1;  }
+_mgage() { _files -W ~/dev/mgage -/; }
+compdef _mgage mgage
+
 msp() { cd ~/dev/msp/$1;  }
 _msp() { _files -W ~/dev/msp -/; }
 compdef _msp msp
