@@ -49,7 +49,7 @@ ZSH_CUSTOM=$HOME/.oh-my-zsh_custom
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(mark gitfast git-extras tmux dirhistory rbenv thefuck)  #tmuxinator
+plugins=(mark gitfast git-extras tmux dirhistory rbenv thefuck brew docker gem)  #tmuxinator
 
 source $ZSH/oh-my-zsh.sh
 
