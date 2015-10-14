@@ -28,6 +28,7 @@ binaries=(
   tree
   ack
   git
+  hub
   erlang
   elixir
   ctags
