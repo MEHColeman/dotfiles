@@ -8,6 +8,7 @@ vim/.netrwhist
 config/spotify
 config/octave
 config/Trolltech.conf
+config/hub
 bash_profile.local
 aliases.local
 gitconfig.local
