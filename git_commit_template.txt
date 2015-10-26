@@ -1,7 +1,14 @@
 
-# 50/72
-# Remember to explain
+# 50/72 line length
+# Present tense, initial caps, short first line
+# e.g. Add widget
+# In the comments, remember to explain
 # * WHY the commit was necessary
 # * HOW does it address the issue
 # * WHAT effects the patch has
+#
+# Reference any github or issue tracker ticker number.
+# github recognises the words such as 'closes', resolves' or 'fixes'
+# bitbucket additionally recognises 'reopens', 'wontfix', 'references', 'see'
+# and 'invalidates'
 
