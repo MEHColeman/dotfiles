@@ -1,7 +1,8 @@
 [include]
         path=~/.gitconfig.local
 [user]
-        name=Mark Coleman
+	name = Mark Coleman
+	email = m@rkcoleman.co.uk
 [color]
         diff = auto
         status = auto
