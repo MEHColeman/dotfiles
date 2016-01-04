@@ -10,12 +10,6 @@ source ~/.vimrc.vundle
 source ~/.vimrc.add-ons
 source ~/.vimrc.key_mappings
 
-map <leader>t :CtrlP<cr>
-map <leader>n :NERDTreeTabsToggle<cr>
-map <leader>h :NERDTree<cr>
-map <leader>. :CtrlPTag<cr>
-map <leader>b :TagbarToggle<cr>
-
 map <Leader>r :call RunCurrentSpecFile()<CR>
 map <Leader>s :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
