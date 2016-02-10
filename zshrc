@@ -76,3 +76,6 @@ source $HOME/.shell_profile
 
 # ssh
 export SSH_KEY_PATH="~/.ssh/dsa_id"
+
+# init tmuxifier
+eval "$(tmuxifier init -)"
