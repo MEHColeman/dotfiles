@@ -31,6 +31,7 @@ alias tmux='tmux -2'
 alias mphoenix='tmuxifier load-window phoenix-dev'
 alias mpay='tmuxifier load-window pay-dev'
 alias mmigpay='tmuxifier load-window migpay-dev'
+alias mnotes='tmuxifier load-window notes'
 
 alias emacs='emacs -nw'
 
