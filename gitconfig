@@ -47,6 +47,7 @@
         dump = cat-file -p
         unstage = reset HEAD --
 	d = difftool
+	fix-conflicts = !$(git config core.editor) $(git ls-files -u | cut -f2 | uniq | xargs echo)
 
 [push]
 	default = current
