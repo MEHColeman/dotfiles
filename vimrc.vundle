@@ -38,7 +38,7 @@ Plugin 'tpope/vim-rbenv'
 Plugin 'tpope/vim-sensible'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-unimpaired'
-"Plugin 'Valloric/YouCompleteMe'
+Plugin 'Valloric/YouCompleteMe'
 Plugin 'vim-scripts/colorsupport.vim'
 Plugin 'skalnik/vim-vroom'
 
