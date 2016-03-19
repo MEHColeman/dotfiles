@@ -1,2 +1,2 @@
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
-let g:ctrlp_user_command = 'find %s -type f'        " MacOSX/Linux
+"let g:ctrlp_user_command = 'find %s -type f'        " MacOSX/Linux
