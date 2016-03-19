@@ -7,7 +7,7 @@ window_root "~/dev/mgage/phoenix"
 new_window "phoenix-dev"
 
 # Split window into panes.
-split_h 35
+split_h 42
 split_v 30
 split_v 14
 
