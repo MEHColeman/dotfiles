@@ -54,8 +54,8 @@
 
 [core]
   whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
-	editor = nvim
 	excludesfile = ~/.gitignore_global
+	editor = vim
 [diff]
 	tool = vimdiff
 [difftool]
