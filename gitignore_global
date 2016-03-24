@@ -11,6 +11,7 @@ Icon?
 # Development
 .rvmrc
 .ruby-gemset
+.byebug_history
 .bundle/*
 bundle/*
 bundler/*
