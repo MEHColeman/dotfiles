@@ -58,6 +58,7 @@
 	editor = vim
 [diff]
 	tool = vimdiff
+	compactionHeuristic = true
 [difftool]
 	prompt = false
 [branch]
