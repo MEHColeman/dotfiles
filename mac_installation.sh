@@ -42,6 +42,7 @@ binaries=(
   qt
   pyqt
   sip
+  zsh-syntax-highlighting
 )
 
 echo "installing binaries..."
