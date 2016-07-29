@@ -44,6 +44,6 @@ map <leader>h :NERDTree<cr>
 map <leader>. :CtrlPTag<cr>
 map <leader>b :TagbarToggle<cr>
 
-
+" I have no idea what this is doing here... cargo-culting
 2+2
 
