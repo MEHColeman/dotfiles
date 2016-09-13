@@ -10,8 +10,6 @@ alias al="ls -la"
 alias lr="ls -lart"
 alias la='ls -lart'
 
-alias sonos="cd ~/dev/msp/sonos"
-alias csearch="cd ~/dev/msp/csearch"
 alias pssh='parallel-ssh -t-1 -P'
 
 alias ffs=sudo
