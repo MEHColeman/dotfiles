@@ -19,6 +19,8 @@ alias gitst='git fetch origin && git log HEAD..origin/master --oneline'
 alias got='git '
 alias get='git '
 alias gcm='git commit -m '
+alias gsmb='git branch --merged | egrep -v "(^\*|master|dev|develop|development|staging|stage)"'
+alias gdmb='git branch --merged | egrep -v "(^\*|master|dev|develop|development|staging|stage)" | xargs git branch -d'
 
 alias bi='bundle check && bundle install --binstubs bundler/bin --standalone'
 alias bii='bundle install --binstubs bundler/bin --standalone'
