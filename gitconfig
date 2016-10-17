@@ -48,6 +48,7 @@
         unstage = reset HEAD --
 	d = difftool
 	fix-conflicts = !$(git config core.editor) $(git ls-files -u | cut -f2 | uniq | xargs echo)
+	it = !git init && git commit -m “root” --allow-empty
 
 [push]
 	default = current
