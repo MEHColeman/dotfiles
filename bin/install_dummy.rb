@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 require 'fileutils'
-SKIP_PATTERNS=[/^\./, /^bin$/, /^lib$/, /^util$/, /^README.md$/, /^BASH_PROFILE_NOTES.txt$/, /^new_install.txt$/, /^NO_DOT_*$/]
+SKIP_PATTERNS=[/^\./, /^bin$/, /^lib$/, /^util$/, /^README.md$/, /^BASH_PROFILE_NOTES.txt$/, /^new_install.txt$/, /^NO_DOT_.*$/]
 install_from_dir = File.expand_path(File.join(File.dirname(__FILE__), ".."))
 
 def op_is_ok?(filename, home_filename)
