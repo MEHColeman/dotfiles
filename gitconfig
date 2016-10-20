@@ -67,6 +67,9 @@
 	autosetupmerge = true
 [merge]
   conflictstyle = diff3
+[merge "gemfilelock"]
+  name = relocks the Gemfile.lock
+  driver = bundle install
 [commit]
   template = ~/.git_commit_template.txt
 [filter "lfs"]
@@ -81,3 +84,9 @@
 	log = diff-highlight | less
 	show = diff-highlight | less
 	diff = diff-highlight | less
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path =
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
