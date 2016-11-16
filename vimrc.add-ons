@@ -17,12 +17,16 @@ let g:slime_target = 'tmux'
 """""""""""""""""""""""""
 " CTRL-P
 """""""""""""""""""""""""
-" ADDON-OPTIONS
 let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/]\.(git|hg|svn)$',
   \ 'file': '\v\.(exe|so|dll)$',
   \ 'link': 'some_bad_symbolic_links',
   \ }
+
+"""""""""""""""""""""""""
+" NERDTree
+"""""""""""""""""""""""""
+let NERDTreeShowHidden=1
 
 2+2
 
