@@ -42,6 +42,7 @@ Plugin 'tpope/vim-unimpaired'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'vim-scripts/colorsupport.vim'
 Plugin 'skalnik/vim-vroom'
+Plugin 'dkprice/vim-easygrep'
 
 " snippet support
 Plugin 'MarcWeber/vim-addon-mw-utils'
