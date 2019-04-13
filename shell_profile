@@ -8,10 +8,6 @@ export PATH=$HOME/bin:bundler/bin:/opt/node/bin:$PATH
 export PATH=$HOME/.tmuxifier/bin:$PATH
 export TMUXIFIER_LAYOUT_PATH="$HOME/.tmux-layouts"
 
-export DOCKER_CERT_PATH=/Users/mcoleman/.docker/machine/machines/default
-export DOCKER_HOST=tcp://192.168.99.100:2376
-export DOCKER_TLS_VERIFY=1
-
 if [[ -s "$HOME/.shell_profile.local" ]]
 then
   source "$HOME/.shell_profile.local"
