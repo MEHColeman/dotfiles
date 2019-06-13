@@ -80,4 +80,6 @@ export SSH_KEY_PATH="~/.ssh/dsa_id"
 # init tmuxifier
 eval "$(tmuxifier init -)"
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# make z command available, if installed
 . `brew --prefix`/etc/profile.d/z.sh
