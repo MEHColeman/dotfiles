@@ -35,6 +35,9 @@ alias mnotes='tmuxifier load-window notes'
 
 alias emacs='emacs -nw'
 
+alias ctop='docker run --rm -ti -v /var/run/docker.sock:/var/run/docker.sock quay.io/vektorlab/ctop:latest'
+alias pretty='prettier --single-quote --trailing-comma es5 --write'
+
 if [[ -s "$HOME/.aliases.local" ]]
 then
   source "$HOME/.aliases.local"
