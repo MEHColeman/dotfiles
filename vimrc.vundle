@@ -43,6 +43,7 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'vim-scripts/colorsupport.vim'
 Plugin 'skalnik/vim-vroom'
 Plugin 'dkprice/vim-easygrep'
+Plugin 'prettier/vim-prettier'
 
 " snippet support
 Plugin 'MarcWeber/vim-addon-mw-utils'
