@@ -75,7 +75,7 @@ source $HOME/.shell_profile
 # export ARCHFLAGS="-arch x86_64"
 
 # ssh
-export SSH_KEY_PATH="~/.ssh/dsa_id"
+export SSH_KEY_PATH="$HOME/.ssh/dsa_id"
 
 # init tmuxifier
 eval "$(tmuxifier init -)"
