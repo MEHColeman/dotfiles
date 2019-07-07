@@ -1,5 +1,5 @@
 .PHONY: all
-all: dotfiles
+all: dotfiles bin
 
 .PHONY: docker
 docker:
@@ -39,3 +39,8 @@ endif
 .PHONY: bin
 bin:
 	cp -R bin $(HOME)/bin
+	for file in $(shell find $(CURDIR)/bin -maxdepth 1 -mindepth 1 -name "*"); do \
+		f=$$(basename $$file); \
+		rm -f $(HOME)/bin/$$f; \
+		ln -sfn $$file $(HOME)/bin/$$f; \
+	done
