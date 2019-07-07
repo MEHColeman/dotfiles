@@ -1,0 +1,13 @@
+#!/bin/sh
+set -e
+
+killall dropbox
+killall btsync
+
+rm -rf /tmp/*
+
+rm -rf /mnt/md0/store/mark/Dropbox
+rm -rf /mnt/md0/store/mark/Downloads
+rm -rf /mnt/md0/store/mark/dev/bw
+
+
