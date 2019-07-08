@@ -2,8 +2,12 @@ FROM ubuntu:18.04
 MAINTAINER Mark Coleman <m@rkcoleman.co.uk>
 
 # OS updates and install
+# git curl zsh ca-certificates and openssh-client needed for oh-my-zsh
+# installation
+# make needed for dotfile installations
 RUN apt-get -qq update
-RUN apt-get install -yqq --no-install-recommends git sudo zsh make curl -qq -y
+RUN apt-get install -yqq --no-install-recommends git sudo zsh make curl \
+            ca-certificates openssh-client -qq -y
 
 # Create test user and add to sudoers
 RUN useradd -m -s /bin/zsh tester
