@@ -1,22 +1,23 @@
-# My configs
-clone into .dotfiles directory, run bin/install.rb
+# Mark's Dotfiles
 
-## Branches
-There is a branch for each environment I need (home mac, work
-debian, etc). The master branch contains stuff that is common.  I use .local
-files and for stuff useful for only one environment.
+## Testing
+```make docker``` to create a test docker image called ```docker_dotfile_test```
+```docker container run -it --rm -v '/Users/mark/.ssh:/home/tester/.ssh' docker_dotfile_test``` will run the container with local ssh keys available (so that git works)
 
-Git process: For changes that are useful to all environments, cherry pick from
-the topic branch onto master, or write directly onto master.  rebase topic
-branches onto master as changes occur.
+```make list_dotfiles``` to check what files will be deleted and replaced by a symlink.
 
 Currently, the oh-my-zsh directory is independent. It has some custom themes
 and plugins that you'll need!
 
-## Linking files
-Ok, so the branch thing was a failed idea. Now I'm going to use hard links to the appropriate file
-'''
-ln aliases.local.msp_debian aliases.local
-'''
-etc
+## Installation
 
+Installation will:
+* delete existing .dotfiles and replace with symlink from this repository
+* install a local bin directory with common useful scripts and executables
+* install oh-my-zsh and set zsh to the be default shell.
+
+```git clone``` this repository to ```.dofiles``` directory.
+```make all target_env=home_macos``` to install the dotfiles with os-specific local files
+Valid options are currently home_macos and generic_ubuntu
+
+```bin/clean_install.sh``` will install oh-my-zsh.
