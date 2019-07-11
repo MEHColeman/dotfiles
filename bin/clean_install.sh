@@ -8,4 +8,7 @@ then
   mv ~/.zshrc.pre-oh-my-zsh ~/.zshrc
 
   git clone https://github.com/jimeh/tmuxifier.git ~/.tmuxifier
+
+  cd ~/.dotfiles
+  git submodule update --init --recursive
 fi
