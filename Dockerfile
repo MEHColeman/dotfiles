@@ -1,5 +1,5 @@
 FROM ubuntu:18.04
-MAINTAINER Mark Coleman <m@rkcoleman.co.uk>
+LABEL maintainer="Mark Coleman <m@rkcoleman.co.uk>"
 
 # OS updates and install
 # git curl zsh ca-certificates and openssh-client needed for oh-my-zsh
@@ -29,4 +29,3 @@ WORKDIR /home/tester/.dotfiles
 RUN make target_env=generic_ubuntu all
 
 CMD ["/bin/zsh"]
-

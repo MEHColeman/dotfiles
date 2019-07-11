@@ -3,6 +3,7 @@
 [user]
 	name = Mark Coleman
 	email = m@rkcoleman.co.uk
+	signingkey = 5016C1BB1F1FBA4D
 [color]
         diff = auto
         status = auto

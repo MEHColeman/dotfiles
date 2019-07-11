@@ -66,3 +66,4 @@ fi
 
 # init tmuxifer
 eval "$(tmuxifier init -)"
+export GPG_TTY=$(tty)

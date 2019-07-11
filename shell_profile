@@ -52,5 +52,6 @@ find_commit() {
   done
 }
 
+export GPG_TTY=$(tty)
 export PATH="$HOME/.rbenv/shims:$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
