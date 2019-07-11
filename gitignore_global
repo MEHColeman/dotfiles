@@ -19,10 +19,4 @@ vendor/bundler/*
 sandi_meter/*
 coverage/*
 
-# btsync directory
-.sync
-.SyncID
-.SyncIgnore
-.SyncArchive
-
 tags
