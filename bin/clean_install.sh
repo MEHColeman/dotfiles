@@ -6,4 +6,6 @@ if [[ $REPLY =~ ^[Yy]$ ]]
 then
   curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh | bash -s -- --unattended
   mv ~/.zshrc.pre-oh-my-zsh ~/.zshrc
+
+  git clone https://github.com/jimeh/tmuxifier.git ~/.tmuxifier
 fi
