@@ -16,3 +16,6 @@
 [submodule "oh-my-zsh_custom/plugins/zsh-syntax-highlighting"]
 	path = oh-my-zsh_custom/plugins/zsh-syntax-highlighting
 	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
+[submodule "oh-my-zsh_custom/plugins/zsh-z"]
+	path = oh-my-zsh_custom/plugins/zsh-z
+	url = https://github.com/agkozak/zsh-z

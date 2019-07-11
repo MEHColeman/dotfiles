@@ -59,7 +59,7 @@ ZSH_CUSTOM=$HOME/.oh-my-zsh_custom
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(mark gitfast git-extras tmux dirhistory rbenv thefuck brew docker gem zsh-syntax-highlighting)  #tmuxinator
+plugins=(mark gitfast git-extras tmux dirhistory rbenv thefuck brew docker gem zsh-z zsh-syntax-highlighting)  #tmuxinator
 
 source $ZSH/oh-my-zsh.sh
 
@@ -89,6 +89,3 @@ export SSH_KEY_PATH="$HOME/.ssh/id_ed25519_common"
 
 # init tmuxifier
 eval "$(tmuxifier init -)"
-
-# make z command available, if installed
-. `brew --prefix`/etc/profile.d/z.sh
