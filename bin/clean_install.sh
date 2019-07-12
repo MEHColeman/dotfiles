@@ -6,6 +6,14 @@ read -p "Are you certain you want to do this? (y/n) " -n 1 -r
 echo
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
+  read -p "Start ssh-agent? (y/n) " -n 1 -r
+  echo
+  if [[ $REPLY =~ ^[Yy]$ ]]
+  then
+    eval $(ssh-agent)
+    ssh-add
+  fi
+
   read -p "Install oh-my-zsh? (y/n) " -n 1 -r
   echo
   if [[ $REPLY =~ ^[Yy]$ ]]

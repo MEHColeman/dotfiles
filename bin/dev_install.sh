@@ -5,6 +5,14 @@ read -p "Are you certain you want to do this? (y/n) " -n 1 -r
 echo
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
+  read -p "Start ssh-agent? (y/n) " -n 1 -r
+  echo
+  if [[ $REPLY =~ ^[Yy]$ ]]
+  then
+    eval $(ssh-agent)
+    ssh-add
+  fi
+
   mkdir -p ~/dev/bw/projects/
   mkdir -p ~/notes/
   git clone git@github.com:MEHColeman/just_dev_things.git ~/notes/general
