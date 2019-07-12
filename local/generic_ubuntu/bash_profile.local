@@ -1,6 +1,2 @@
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
-
-spod() {
-  curl -s -k -F "content=<${1--}" -F ttl=604800 -w "%{redirect_url}\n" -o /dev/null https://spodder.com/
-}
