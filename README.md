@@ -20,4 +20,7 @@ Installation will:
 ```make all target_env=home_macos``` to install the dotfiles with os-specific local files
 Valid options are currently home_macos and generic_ubuntu
 
-```bin/clean_install.sh``` will install oh-my-zsh.
+```bin/clean_install.sh``` will install oh-my-zsh, tmuxifier and update dotfile
+submodules and oh-my-zsh extensions
+
+```bin/dev_install.sh``` will install and configure vim and plugins and rbenv
