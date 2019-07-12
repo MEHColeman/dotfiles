@@ -32,7 +32,7 @@ then
   echo
   if [[ $REPLY =~ ^[Yy]$ ]]
   then
-    cd ~/.dotfiles
+    cd ~/.dotfiles || exit
     git submodule update --init --recursive
   fi
 fi
