@@ -21,13 +21,6 @@ then
     git clone https://github.com/jimeh/tmuxifier.git ~/.tmuxifier
   fi
 
-  read -p "Install rbenv? (y/n) " -n 1 -r
-  echo
-  if [[ $REPLY =~ ^[Yy]$ ]]
-  then
-    curl -fsSL https://github.com/rbenv/rbenv-installer/raw/master/bin/rbenv-installer | bash
-  fi
-
   read -p "Update .dotfile submodules? (y/n) " -n 1 -r
   echo
   if [[ $REPLY =~ ^[Yy]$ ]]
