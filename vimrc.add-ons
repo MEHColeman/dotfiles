@@ -54,5 +54,7 @@ call expand_region#custom_text_objects('ruby', {
       \ 'am' :0,
       \ })
 
+let g:autotagCtagsCmd="uctags"
+
 2+2
 

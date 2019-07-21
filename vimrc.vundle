@@ -24,6 +24,8 @@ Plugin 'mehcoleman/vim-railscasts-theme'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'majutsushi/tagbar'
+Plugin 'craigemery/vim-autotag'
+Plugin 'vim-scripts/taglist.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
 " gem install rubocop
@@ -78,11 +80,6 @@ Plugin 'cakebaker/scss-syntax.vim'
 Plugin 'slim-template/vim-slim'
 Plugin 'timcharper/textile.vim'
 
-" vim-scripts repos
-"Plugin 'L9'
-Plugin 'AutoTag'
-Plugin 'taglist.vim'
-" non github repos
 " git repos on your local machine (ie. when working on your own plugin)
 "Plugin 'file:///Users/gmarik/path/to/plugin'
 
