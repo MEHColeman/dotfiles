@@ -13,6 +13,7 @@ then
     ssh-add
   fi
 
+  # Add common projects and dirs
   mkdir -p ~/dev/bw/projects/
   mkdir -p ~/notes/
   git clone git@github.com:MEHColeman/just_dev_things.git ~/notes/general
@@ -20,6 +21,9 @@ then
   cd ~/notes/blog || exit
   git remote add private git@bitbucket.org:MEHColeman/blog.git
 
+
+  # Install and add Vundle plugins
+  git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/vundle
   vim +BundleInstall +qall
   cd ~/.vim/bundle/YouCompleteMe || exit
   ./install.py --all
