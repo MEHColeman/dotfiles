@@ -32,8 +32,8 @@ then
   echo
   if [[ $REPLY =~ ^[Yy]$ ]]
   then
-    sudo curl https://raw.githubusercontent.com/universal-ctags/ctags-docker/master/uctags > /usr/local/bin/uctags
-    sudo chmod +x /usr/local/bin/uctags
+    curl https://raw.githubusercontent.com/universal-ctags/ctags-docker/master/uctags > /usr/local/bin/uctags
+    chmod +x /usr/local/bin/uctags
   fi
 
   read -p "Install rbenv? (y/n) " -n 1 -r
