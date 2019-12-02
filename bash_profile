@@ -67,3 +67,7 @@ fi
 # init tmuxifer
 eval "$(tmuxifier init -)"
 export GPG_TTY=$(tty)
+
+### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
+export PATH="/Users/mark/.rd/bin:$PATH"
+### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
