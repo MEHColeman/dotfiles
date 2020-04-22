@@ -53,5 +53,7 @@ find_commit() {
 }
 
 export GPG_TTY=$(tty)
+export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 export PATH="$HOME/.rbenv/shims:$HOME/.rbenv/bin:$PATH"
+eval "$(thefuck --alias)"
 eval "$(rbenv init -)"
