@@ -8,6 +8,8 @@ export PATH=$HOME/bin:bundler/bin:/opt/node/bin:$PATH
 export PATH=$HOME/.tmuxifier/bin:$PATH
 export TMUXIFIER_LAYOUT_PATH="$HOME/.tmux-layouts"
 
+export ERL_AFLAGS="-kernel shell_history enabled"
+
 if [[ -s "$HOME/.shell_profile.local" ]]
 then
   source "$HOME/.shell_profile.local"
