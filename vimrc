@@ -25,6 +25,7 @@ set nowrap  " don't wrap lines
 set list " Show invisible characters
 set backspace=indent,eol,start    " backspace through everything in insert mode
 set relativenumber
+set nojoinspaces    " don't add double spaces at the end of sentences
 
 " split panes nicely
 set splitbelow
