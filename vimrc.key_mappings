@@ -30,13 +30,13 @@ nnoremap <silent> <C-l> :TmuxNavigateRight<cr>
 nnoremap <silent> <C-a> :TmuxNavigatePrevious<cr>
 
 " bindings for inlining ruby output, requires seeing_is_believing gem
-nmap <buffer> <F4> <Plug>(seeing-is-believing-run)
-xmap <buffer> <F4> <Plug>(seeing-is-believing-run)
-imap <buffer> <F4> <Plug>(seeing-is-believing-run)
+nmap <buffer> <F6> <Plug>(seeing-is-believing-run)
+xmap <buffer> <F6> <Plug>(seeing-is-believing-run)
+imap <buffer> <F6> <Plug>(seeing-is-believing-run)
 
-nmap <buffer> <F3> <Plug>(seeing-is-believing-mark)
-xmap <buffer> <F3> <Plug>(seeing-is-believing-mark)
-imap <buffer> <F3> <Plug>(seeing-is-believing-mark)
+nmap <buffer> <F5> <Plug>(seeing-is-believing-mark)
+xmap <buffer> <F5> <Plug>(seeing-is-believing-mark)
+imap <buffer> <F5> <Plug>(seeing-is-believing-mark)
 
 map <leader>t :Unite<cr>
 map <leader>n :NERDTreeTabsToggle<cr>

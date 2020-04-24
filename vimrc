@@ -14,6 +14,8 @@ map <Leader>r :call RunCurrentSpecFile()<CR>
 map <Leader>s :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
+map <F3> :call TextWrap()<CR>
+map <F4> :call TextWidth()<CR>
 
 " tmux-vim-navigator bindings - use ctrl-arrows
 set tabstop=2  " a tab is two spaces
@@ -26,6 +28,7 @@ set list " Show invisible characters
 set backspace=indent,eol,start    " backspace through everything in insert mode
 set relativenumber
 set nojoinspaces    " don't add double spaces at the end of sentences
+set pastetoggle=<F2>
 
 " split panes nicely
 set splitbelow
@@ -64,6 +67,14 @@ hi ColorColumn guibg=#2d2d2d ctermbg=Grey
 runtime macros/matchit.vim
 
 :set tags=./tags;~
+
+function! TextWrap()
+  set wrap linebreak nolist
+endfunction
+
+function! TextWidth()
+  set textwidth=79
+endfunction
 
 function! <SID>StripTrailingWhitespaces()
   if !&binary && &filetype !='diff'
