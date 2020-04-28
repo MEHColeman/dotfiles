@@ -64,6 +64,9 @@ set winheight=999
 let &colorcolumn=join(range(81,337),",")
 hi ColorColumn guibg=#2d2d2d ctermbg=Grey
 
+" make insert mode clearer
+autocmd InsertEnter,InsertLeave * set cul!
+
 runtime macros/matchit.vim
 
 :set tags=./tags;~
