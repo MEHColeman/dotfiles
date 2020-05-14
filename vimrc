@@ -43,6 +43,9 @@ set listchars+=extends:>          " The character to show in the last column whe
 set listchars+=precedes:<         " The character to show in the last column when wrap is
                                   " off and the line continues beyond the left of the screen
 
+" use par for formatting
+set formatprg=par\ -w80
+
 "" Searching
 set hlsearch    " highlight matches
 set incsearch   " incremental searching

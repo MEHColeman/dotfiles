@@ -37,6 +37,7 @@ declare -a packages=(
   "hub"
   "kubernetes-cli"
   "mosh"
+  "par"
   "postgresql"
   "rbenv"
   "reattach-to-user-namespace"
