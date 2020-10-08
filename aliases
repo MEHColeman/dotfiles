@@ -1,6 +1,6 @@
 # common aliases
 
-alias less='less -R'
+alias less='less -RX'
 alias ack='ack-grep'
 
 alias s="ls"

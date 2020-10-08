@@ -83,9 +83,9 @@
 [interactive]
 	diffFilter = diff-highlight
 [pager]
-	log = diff-highlight | less -R
-	show = diff-highlight | less -R
-	diff = diff-highlight | less -R
+	log = diff-highlight | less -RX
+	show = diff-highlight | less -RX
+	diff = diff-highlight | less -RX
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path =
