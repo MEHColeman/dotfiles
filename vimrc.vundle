@@ -1,57 +1,50 @@
 """""""""""""""""""""""""
-" VUNDLER
+" vim-plug plugin manager
 """""""""""""""""""""""""
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+call plug#begin()
 
-" let Vundle manage Vundle
-" required!
-Plugin 'gmarik/vundle'
-"
-" My Plugins here:
-"
 " original repos on github
-Plugin 'airblade/vim-gitgutter'
-Plugin 'bling/vim-airline'
-Plugin 'chrisbra/Recover.vim'
-Plugin 'christoomey/vim-tmux-navigator'
-Plugin 'jesson/vim-daylight'
-Plugin 'mehcoleman/vim-github-colorscheme'
-Plugin 'gregsexton/gitv'
-Plugin 'hwartig/vim-seeing-is-believing'
-Plugin 'jpalardy/vim-slime'
-Plugin 'mehcoleman/vim-railscasts-theme'
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'Lokaltog/vim-easymotion'
-Plugin 'majutsushi/tagbar'
-Plugin 'craigemery/vim-autotag'
-Plugin 'vim-scripts/taglist.vim'
-Plugin 'scrooloose/nerdtree'
-Plugin 'scrooloose/nerdcommenter'
+Plug 'airblade/vim-gitgutter'
+Plug 'bling/vim-airline'
+Plug 'chrisbra/Recover.vim'
+Plug 'christoomey/vim-tmux-navigator'
+Plug 'jesson/vim-daylight'
+Plug 'mehcoleman/vim-github-colorscheme'
+Plug 'gregsexton/gitv'
+Plug 'hwartig/vim-seeing-is-believing'
+Plug 'jpalardy/vim-slime'
+Plug 'mehcoleman/vim-railscasts-theme'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'Lokaltog/vim-easymotion'
+Plug 'majutsushi/tagbar'
+Plug 'craigemery/vim-autotag'
+Plug 'vim-scripts/taglist.vim'
+Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+Plug 'scrooloose/nerdcommenter'
 " gem install rubocop
-Plugin 'scrooloose/syntastic'
-Plugin 'jistr/vim-nerdtree-tabs'
-Plugin 'terryma/vim-expand-region'
-Plugin 'tpope/vim-abolish'
-Plugin 'tpope/vim-endwise'
-Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-eunuch'
-Plugin 'tpope/vim-obsession'
-Plugin 'tpope/vim-rbenv'
-Plugin 'tpope/vim-sensible'
-Plugin 'tpope/vim-surround'
-Plugin 'tpope/vim-unimpaired'
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'vim-scripts/colorsupport.vim'
-Plugin 'skalnik/vim-vroom'
-Plugin 'dkprice/vim-easygrep'
-Plugin 'prettier/vim-prettier'
+Plug 'scrooloose/syntastic'
+Plug 'terryma/vim-expand-region'
+Plug 'tpope/vim-abolish'
+Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-eunuch'
+Plug 'tpope/vim-obsession'
+Plug 'tpope/vim-rbenv'
+Plug 'tpope/vim-sensible'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-unimpaired'
+Plug 'ycm-core/YouCompleteMe', { 'do': './install.py' }
+Plug 'vim-scripts/colorsupport.vim'
+Plug 'skalnik/vim-vroom'
+Plug 'dkprice/vim-easygrep'
+Plug 'prettier/vim-prettier'
+Plug 'Xuyuanp/nerdtree-git-plugin'
 
 " snippet support
-Plugin 'MarcWeber/vim-addon-mw-utils'
-Plugin 'tomtom/tlib_vim'
-Plugin 'garbas/vim-snipmate'
-Plugin 'honza/vim-snippets'
+Plug 'MarcWeber/vim-addon-mw-utils'
+Plug 'tomtom/tlib_vim'
+Plug 'garbas/vim-snipmate'
+Plug 'honza/vim-snippets'
 
 " cd ~/.vim/bundle/YouCompleteMe
 " ./install.sh [--clang-completer]
@@ -59,40 +52,25 @@ Plugin 'honza/vim-snippets'
 
 " Language support
 " (I found these via carlhuda/janus)
-Plugin 'tpope/vim-bundler'
-Plugin 'kchmck/vim-coffee-script'
-Plugin 'chrisbra/csv.vim'
-Plugin 'tpope/vim-cucumber'
-Plugin 'elixir-lang/vim-elixir'
-Plugin 'jimenezrick/vimerl'
-Plugin 'tpope/vim-git'
-Plugin 'jnwhiteh/vim-golang'
-Plugin 'tpope/vim-haml'
-Plugin 'pangloss/vim-javascript'
-Plugin 'tpope/vim-markdown'
-Plugin 'sunaku/vim-ruby-minitest'
-Plugin 'mmalecki/vim-node.js'
-Plugin 'tpope/vim-rails'
-Plugin 'vim-ruby/vim-ruby'
-Plugin 'thoughtbot/vim-rspec'
-Plugin 'cakebaker/scss-syntax.vim'
-Plugin 'slim-template/vim-slim'
-Plugin 'timcharper/textile.vim'
+Plug 'tpope/vim-bundler'
+Plug 'kchmck/vim-coffee-script'
+Plug 'chrisbra/csv.vim'
+Plug 'tpope/vim-cucumber'
+Plug 'elixir-lang/vim-elixir'
+Plug 'jimenezrick/vimerl'
+Plug 'tpope/vim-git'
+Plug 'jnwhiteh/vim-golang'
+Plug 'tpope/vim-haml'
+Plug 'pangloss/vim-javascript'
+Plug 'tpope/vim-markdown'
+Plug 'sunaku/vim-ruby-minitest', { 'for': 'ruby' }
+Plug 'mmalecki/vim-node.js'
+Plug 'tpope/vim-rails', { 'for': 'ruby' }
+Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
+Plug 'thoughtbot/vim-rspec', { 'for': 'ruby' }
+Plug 'cakebaker/scss-syntax.vim'
+Plug 'slim-template/vim-slim'
+Plug 'timcharper/textile.vim'
 
-" git repos on your local machine (ie. when working on your own plugin)
-"Plugin 'file:///Users/gmarik/path/to/plugin'
-
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
-" To ignore plugin indent changes, instead use:
-"filetype plugin on
-"
-" Brief help
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-"
-" see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this line
+" All of your Plugs must be added before the following line
+call plug#end()            " required
