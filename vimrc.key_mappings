@@ -39,8 +39,7 @@ xmap <buffer> <F5> <Plug>(seeing-is-believing-mark)
 imap <buffer> <F5> <Plug>(seeing-is-believing-mark)
 
 map <leader>t :Unite<cr>
-map <leader>n :NERDTreeTabsToggle<cr>
-map <leader>h :NERDTree<cr>
+map <leader>n :NERDTreeToggle<cr>
 map <leader>. :CtrlPTag<cr>
 map <leader>b :TagbarToggle<cr>
 
