@@ -20,4 +20,6 @@ vim/bundle/vundle/**
 vim/_temp
 vim/_backup
 vim/spell
+vim/plugged
+
 *.private
