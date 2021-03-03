@@ -1,5 +1,18 @@
 
 # 50/72 line length
+# `[feat|fix][(scope)][!]: Description`
+# prefix:
+# `feat` to indicate adding a feature, MINOR semver
+# `fix` for fixing a bug, PATCH semver
+# `!` or `BREAKING CHANGE: Description` for MAJOR semver
+# If these don't apply you can choose other descriptors, like
+# `[dev|docs|ci|chore|style|refactor|perf|test|build]`
+#
+# Scope:
+# Optional indication of area of code impacted, e.g. parser, api, view
+# controller, service, etc.
+#
+# Description:
 # Present tense, initial caps, short first line
 # Should complete the sentence 'Applying this commit will ______'
 # e.g. Add widget
