@@ -87,3 +87,7 @@ export SSH_KEY_PATH="$HOME/.ssh/id_ed25519_common"
 
 # init tmuxifier
 eval "$(tmuxifier init -)"
+export PATH="/usr/local/opt/python@3.9/bin:$PATH"
+
+# init mcfly
+eval "$(mcfly init zsh)"
