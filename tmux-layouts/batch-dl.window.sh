@@ -16,9 +16,6 @@ split_v 50 1
 split_v 33 4
 split_v 50 4
 
-split_v 33 7
-split_v 50 7
-
 # Run commands.
 run_cmd " pwd"  1    # runs in active pane
 run_cmd " ls" 2  # runs in pane 1
