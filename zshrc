@@ -41,7 +41,9 @@ DEFAULT_USER="mark"
 # Uncomment following line if you want to the command execution time stamp shown
 # in the history command output.
 # The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
-HIST_STAMPS="yyyy-mm-dd"
+export HIST_STAMPS="yyyy-mm-dd"
+export HISTSIZE=50000
+export SAVEHIST=$HISTSIZE
 
 # Remove duplicate items
 setopt EXTENDED_HISTORY
