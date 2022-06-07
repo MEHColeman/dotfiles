@@ -2,10 +2,18 @@
 
 ## Testing
 `make docker` to create a test docker image called `docker_dotfile_test`
-`docker container run -it --rm -v '/Users/mark/.ssh:/home/tester/.ssh' docker_dotfile_test`
+
+This will create a test container that will have the `make all`
+installation script run on it with a target of `generic_ubuntu`
+
+Opening a shell with
+~~~
+docker container run -it --rm -v '/Users/mark/.ssh:/home/tester/.ssh' docker_dotfile_test
+~~~
 will run the container with local ssh keys available (so that git works)
 
-`make list_dotfiles` to check what files will be deleted and replaced by a symlink.
+Once running, run `make list_dotfiles` to check what files will be deleted and
+replaced by a symlink.
 
 Currently, the oh-my-zsh directory is independent. It has some custom themes
 and plugins that you'll need!
@@ -24,5 +32,8 @@ Valid options are currently home_macos and generic_ubuntu
 `install/clean_install.sh` will install oh-my-zsh, tmuxifier and update dotfile
 submodules and oh-my-zsh extensions
 
-`install/dev_install.sh` will install and configure vim and plugins and rbenv
-`install/util_install.sh` will install a bunch of other useful tools.
+`[sudo] install/dev_install.sh` will install and configure vim and plugins and rbenv
+`[sudo] install/util_install.sh` will install a bunch of other useful tools.
+
+## See Also
+BASH_PROFILE_NOTES_README.txt

@@ -1,4 +1,4 @@
-install chrome
+install your web browser of choice
 install lastpass/password manager
 create .ssh key
 add to github

@@ -8,7 +8,11 @@ touch the files
 shell_profile.private
 bash_profile.private
 
-run the bin/install.rb script
+`install/clean_install.sh` will install oh-my-zsh, tmuxifier and update dotfile
+submodules and oh-my-zsh extensions
+`[sudo] install/dev_install.sh` will install and configure vim and plugins and rbenv
+`[sudo] install/util_install.sh` will install a bunch of other useful tools.
+
 
 :BundleInstall vim
 
