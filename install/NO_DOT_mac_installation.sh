@@ -25,23 +25,25 @@ brew tap homebrew/dupes
 brew install homebrew/dupes/grep
 
 binaries=(
-  tree
   ack
+  cmake
+  ctags
   git
-  hub
+  diffr
   erlang
   elixir
-  ctags
-  rbenv
-  ruby-build
-  cmake
-  tmux
-  reattach-to-user-namespace
-  vim
+  gh
+  mcfly
   mosh
-  qt
   pyqt
+  qt
+  rbenv
+  reattach-to-user-namespace
+  ruby-build
   sip
+  tmux
+  tree
+  vim
   zsh-syntax-highlighting
 )
 
@@ -52,22 +54,11 @@ brew cleanup
 
 # Apps
 apps=(
-  dropbox
-  google-chrome
-  appcleaner
-  vagrant
-  iterm2
-  virtualbox
-  flux
-  vlc
-  skype
+  alacritty
+  balenaetcher
   transmission
-  adium
-  filezilla
-  multidoge
-  litecoin
-  teensy
-  crashplan
+  lastpass
+  vlc
 )
 
 # Install apps to /Applications

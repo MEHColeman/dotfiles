@@ -2,6 +2,8 @@
 
 echo "This script installs various useful packages on both linux and macOS"
 
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
 unameOut="$(uname -s)"
 case "${unameOut}" in
   Linux*)     machine=Linux;;
@@ -13,16 +15,17 @@ esac
 echo ${machine}
 
 case $machine in
-  Mac)        install_command='brew install';;
-  Linux)      install_command='apt-get install -yqq';;
-  *)          install_commmand='#'
+  Mac)        install_command="brew install";;
+  Linux)      install_command="apt-get install -yqq";;
+  *)          install_command="#"
 esac
 
-echo $(install_command)
+echo $install_command
 
 # both brew and apt-get have the same name
 declare -a packages=(
   "ack"
+  "alacritty"
   "bash"
   "cmake"
   "coreutils"
@@ -32,11 +35,13 @@ declare -a packages=(
   "findutils"
   "gcc"
   "git"
+  "glances"
   "grep"
   "hadolint"
-  "hub"
-  "kubernetes-cli"
   "mosh"
+  "node"
+  "neofetch"
+  "neovim"
   "par"
   "postgresql"
   "rbenv"
@@ -47,19 +52,25 @@ declare -a packages=(
   "tmux"
   "tree"
   "vim"
-  "youtube-dl"
+  "yt-dlp"
 )
 
+brew install mcfly
+
+if [[ $machine=Linux ]]
+then
+  apt-get install software-properties-common
+  add-apt-repository ppa:aslatter/ppa
+fi
+
 for package in "${packages[@]}"
+
 do
   read -p "Install ${package} ? (y/n) " -n 1 -r
   if [[ $REPLY =~ ^[Yy]$ ]]
   then
-    if [[ $machine = "Mac" ]]
-    then
-      echo "Installing ${package}"
-      eval $install_command $package
-    fi
+    echo "Installing ${package}"
+    eval $install_command $package
   fi
 done
 
