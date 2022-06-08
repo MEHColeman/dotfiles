@@ -48,7 +48,7 @@ binaries=(
 )
 
 echo "installing binaries..."
-brew install ${binaries[@]}
+brew install "${binaries[@]}"
 
 brew cleanup
 
@@ -64,7 +64,7 @@ apps=(
 # Install apps to /Applications
 # Default is: /Users/$user/Applications
 echo "installing apps..."
-brew cask install --appdir="/Applications" ${apps[@]}
+brew cask install --appdir="/Applications" "${apps[@]}"
 
 brew tap caskroom/fonts
 
@@ -77,8 +77,8 @@ fonts=(
 
 # install fonts
 echo "installing fonts..."
-brew cask install ${fonts[@]}
+brew cask install "${fonts[@]}"
 
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/vundle
 
-echo "Don't forget to remove the cntl-arrow mac shortcuts so that tmux works nicely"
+echo "Don't forget to remove the ctrl-arrow mac shortcuts so that tmux works nicely"
