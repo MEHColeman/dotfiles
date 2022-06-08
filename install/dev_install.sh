@@ -22,10 +22,12 @@ then
   git remote add private git@bitbucket.org:MEHColeman/blog.git
 
 
-  # Install and add Vundle plugins
-  git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/vundle
-  vim +BundleInstall +qall
-  cd ~/.vim/bundle/YouCompleteMe || exit
+  # Install vim-plug and add plugins
+  curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+  vim +PlugInstall +qall
+  cd ~/.vim/plugged/YouCompleteMe || exit
   ./install.py --all
 
   read -p "Install uctags? (y/n) " -n 1 -r
