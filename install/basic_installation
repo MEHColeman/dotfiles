@@ -1,0 +1,63 @@
+#!/bin/bash
+
+echo "This script installs some very useful basic packages on both linux and macOS"
+
+unameOut="$(uname -s)"
+case "${unameOut}" in
+  Linux*)     machine=Linux;;
+  Darwin*)    machine=Mac;;
+  CYGWIN*)    machine=Cygwin;;
+  MINGW*)     machine=MinGw;;
+  *)          machine="UNKNOWN:${unameOut}"
+esac
+echo ${machine}
+
+case $machine in
+  Mac)
+    update_command="brew update"
+    install_command="brew install"
+    clean_command="brew clean"
+    ;;
+  Linux)
+    update_command="apt-get -qq update"
+    install_command="apt-get install -yqq"
+    clean_command="apt-get autoclean"
+    ;;
+  *)
+    update_command="#"
+    install_command="#"
+    clean_command="#"
+esac
+
+echo "Installing with $install_command"
+
+# For all these packages, both brew and apt-get have the same name
+
+# git ca-certificates curl openssh-client and zsh needed for oh-my-zsh
+# installation
+# make needed for dotfile installations
+declare -a packages=(
+  "git"
+  "ca-certificates"
+  "curl"
+  "openssh-client"
+  "zsh"
+  "make"
+  "cmake"
+  "grep"
+  "neofetch"
+  "neovim"
+  "sudo"
+  "tmux"
+)
+
+eval "$update_command"
+
+for package in "${packages[@]}"
+
+do
+    echo "Installing ${package}"
+    eval "$install_command $package"
+done
+
+eval "$clean_command"
