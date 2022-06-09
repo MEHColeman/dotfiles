@@ -1,14 +1,6 @@
 FROM ubuntu:22.04
 LABEL maintainer="Mark Coleman <m@rkcoleman.co.uk>"
 
-# OS updates and install
-# git curl zsh ca-certificates and openssh-client needed for oh-my-zsh
-# installation
-# make needed for dotfile installations
-RUN apt-get -qq update
-RUN apt-get install -yqq --no-install-recommends git sudo zsh make curl \
-            ca-certificates openssh-client -qq -y
-
 # Create test user and add to sudoers
 RUN useradd -m -s /bin/zsh tester
 RUN usermod -aG sudo tester
@@ -16,6 +8,12 @@ RUN echo "tester   ALL=(ALL:ALL) NOPASSWD: ALL" > /etc/sudoers
 
 # Add dotfiles and chown
 ADD . /home/tester/.dotfiles
+
+# Install the most commonly required packages and tools
+# Some (like make) are prerequisites to the dotfile installation
+RUN /home/tester/.dotfiles/install/basic_installation
+
+# Chown files
 RUN chown -R tester:tester /home/tester
 
 # Switch testuser
