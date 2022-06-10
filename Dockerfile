@@ -11,7 +11,7 @@ ADD . /home/tester/.dotfiles
 
 # Install the most commonly required packages and tools
 # Some (like make) are prerequisites to the dotfile installation
-RUN /home/tester/.dotfiles/install/basic_installation
+RUN /home/tester/.dotfiles/install/basic_install
 
 # Chown files
 RUN chown -R tester:tester /home/tester
