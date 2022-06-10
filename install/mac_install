@@ -28,7 +28,6 @@ binaries=(
   ack
   cmake
   ctags
-  git
   diffr
   erlang
   elixir
@@ -41,9 +40,7 @@ binaries=(
   reattach-to-user-namespace
   ruby-build
   sip
-  tmux
   tree
-  vim
   zsh-syntax-highlighting
 )
 
@@ -65,19 +62,5 @@ apps=(
 # Default is: /Users/$user/Applications
 echo "installing apps..."
 brew cask install --appdir="/Applications" "${apps[@]}"
-
-brew tap caskroom/fonts
-
-fonts=(
-  font-m-plus
-  font-clear-sans
-  font-roboto
-  font-inconsolata
-)
-
-# install fonts
-echo "installing fonts..."
-brew cask install "${fonts[@]}"
-
 
 echo "Don't forget to remove the ctrl-arrow mac shortcuts so that tmux works nicely"
