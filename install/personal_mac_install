@@ -1,0 +1,77 @@
+#!/bin/bash
+
+echo "This script installs stuff I want on a home machine, but not a work machine, for macOS"
+
+update_command="brew update"
+install_command="brew cask install"
+clean_command="brew clean"
+
+echo "Installing with $install_command"
+
+# both brew and apt-get have the same name
+declare -a casks=(
+  "affinity-photo"
+  "alfred"
+  "arduino"
+  "arq"
+  "backblaze"
+  "daisydisk"
+  "discord"
+  "divvy"
+  "dropbox"
+  "dymo-label"
+  "emby-server"
+  "iina"
+  "genimi"
+  "inkscape"
+  "ledger-live"
+  "makemkv"
+  "mimestream"
+  "monero-wallet"
+  "mullvadvpn"
+  "multifirefox"
+  "nault"
+  "obs"
+  "omnifocus"
+  "omniplan"
+  "onyx"
+  "plex-media-server"
+  "spotify"
+  "telegram"
+  "transmission"
+  "vLC"
+  "zoom"
+
+declare -a kegs=(
+  "ffmpeg"
+  "yt-dlp"
+)
+
+eval "$update_command"
+
+for keg in "${kegs[@]}"
+
+do
+  read -p "Install ${keg} ? (y/n) " -n 1 -r
+  if [[ $REPLY =~ ^[Yy]$ ]]
+  then
+    echo "Installing ${keg}"
+    eval "brew install $keg"
+  fi
+done
+
+for cask in "${casks[@]}"
+
+do
+  read -p "Install ${cask} ? (y/n) " -n 1 -r
+  if [[ $REPLY =~ ^[Yy]$ ]]
+  then
+    echo "Installing ${cask}"
+    eval $install_command $cask
+  fi
+done
+
+
+eval "$clean_command"
+
+echo "Done"
