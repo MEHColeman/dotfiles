@@ -18,7 +18,7 @@ then
   echo
   if [[ $REPLY =~ ^[Yy]$ ]]
   then
-    curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh | bash -s -- --unattended
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
     mv ~/.zshrc.pre-oh-my-zsh ~/.zshrc
   fi
 
