@@ -1,13 +1,22 @@
-FROM ubuntu:22.04
+FROM ubuntu:22.04 AS start
 LABEL maintainer="Mark Coleman <m@rkcoleman.co.uk>"
 
 # Create test user and add to sudoers
-RUN useradd -m -s /bin/zsh tester
+
+RUN useradd -m -s /bin/zsh -p test tester
 RUN usermod -aG sudo tester
 RUN echo "tester   ALL=(ALL:ALL) NOPASSWD: ALL" > /etc/sudoers
+WORKDIR /home/tester
 
 # Add dotfiles and chown
-ADD . /home/tester/.dotfiles
+FROM start AS temp_files
+ADD https://github.com/MEHColeman/dotfiles/archive/refs/heads/master.zip /temp/
+RUN apt-get update -qq
+RUN apt-get install -yqq unzip
+RUN unzip /temp/master.zip
+
+FROM start AS final
+COPY --from=temp_files /home/tester/dotfiles-master /home/tester/.dotfiles
 
 # Install the most commonly required packages and tools
 # Some (like make) are prerequisites to the dotfile installation
@@ -22,8 +31,5 @@ ENV HOME /home/tester
 
 # Change working directory
 WORKDIR /home/tester/.dotfiles
-
-# Run setup
-RUN make target_env=generic_ubuntu all
 
 CMD ["/bin/zsh"]
