@@ -2,8 +2,6 @@
 
 echo "This script installs various useful packages on both linux and macOS"
 
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-
 unameOut="$(uname -s)"
 case "${unameOut}" in
   Linux*)     machine=Linux;;
@@ -15,48 +13,51 @@ esac
 echo ${machine}
 
 case $machine in
-  Mac)        install_command="brew install";;
-  Linux)      install_command="apt-get install -yqq";;
-  *)          install_command="#"
+  Mac)
+    update_command="brew update"
+    install_command="brew install"
+    clean_command="brew clean"
+    ;;
+  Linux)
+    update_command="apt-get -qq update"
+    install_command="apt-get install -yqq"
+    clean_command="apt-get autoclean"
+    ;;
+  *)
+    update_command="#"
+    install_command="#"
+    clean_command="#"
 esac
 
-echo $install_command
+echo "Installing with $install_command"
 
 # both brew and apt-get have the same name
 declare -a packages=(
   "ack"
   "alacritty"
   "bash"
-  "cmake"
   "coreutils"
   "dfu-util"
   "elixir"
-  "ffmpeg"
   "findutils"
   "gcc"
-  "git"
   "glances"
-  "grep"
   "hadolint"
   "mosh"
   "node"
-  "neofetch"
-  "neovim"
+  "obsidian"
   "par"
   "postgresql"
   "rbenv"
-  "reattach-to-user-namespace"
   "shellcheck"
   "thefuck"
   "tig"
-  "tmux"
   "tree"
-  "vim"
-  "yt-dlp"
 )
 
-brew install mcfly
+eval "$update_command"
 
+# You need this to install alacritty on linux, via apt-get
 if [[ $machine=Linux ]]
 then
   apt-get install software-properties-common
@@ -73,5 +74,27 @@ do
     eval $install_command $package
   fi
 done
+
+
+# brew available for both mac and linux
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+brew install mcfly
+
+brew tap caskroom/fonts
+fonts=(
+  font-m-plus
+  font-clear-sans
+  font-roboto
+  font-inconsolata
+  font-rosario
+)
+
+# install fonts
+echo "installing fonts..."
+brew cask install "${fonts[@]}"
+
+
+eval "$clean_command"
 
 echo "Done"

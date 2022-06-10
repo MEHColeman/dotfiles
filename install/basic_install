@@ -61,3 +61,6 @@ do
 done
 
 eval "$clean_command"
+
+chsh -s /usr/bin/zsh
+
