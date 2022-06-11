@@ -59,19 +59,15 @@ eval "$update_command"
 # You need this to install alacritty on linux, via apt-get
 if [[ $machine=Linux ]]
 then
-  apt-get install software-properties-common
-  add-apt-repository ppa:aslatter/ppa
+  sudo apt-get install -yqq software-properties-common
+  sudo add-apt-repository ppa:aslatter/ppa
 fi
 
 for package in "${packages[@]}"
 
 do
-  read -p "Install ${package} ? (y/n) " -n 1 -r
-  if [[ $REPLY =~ ^[Yy]$ ]]
-  then
-    echo "Installing ${package}"
-    eval $install_command $package
-  fi
+  echo "Installing ${package}"
+  eval $install_command $package
 done
 
 brew install mcfly
