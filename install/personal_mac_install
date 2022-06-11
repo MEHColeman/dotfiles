@@ -39,7 +39,7 @@ declare -a casks=(
   "spotify"
   "telegram"
   "transmission"
-  "vLC"
+  "vlc"
   "zoom"
 
 declare -a kegs=(

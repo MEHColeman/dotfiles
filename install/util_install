@@ -45,7 +45,6 @@ declare -a packages=(
   "hadolint"
   "mosh"
   "node"
-  "obsidian"
   "par"
   "postgresql"
   "rbenv"

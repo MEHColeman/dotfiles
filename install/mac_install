@@ -17,23 +17,19 @@ brew tap homebrew/dupes
 brew install homebrew/dupes/grep
 
 binaries=(
-  ack
-  cmake
-  ctags
-  diffr
-  erlang
-  elixir
-  gh
-  mcfly
-  mosh
-  pyqt
-  qt
-  rbenv
-  reattach-to-user-namespace
-  ruby-build
-  sip
-  tree
-  zsh-syntax-highlighting
+  "cmake"
+  "ctags"
+  "diffr"
+  "erlang"
+  "elixir"
+  "mosh"
+  "pyqt"
+  "qt"
+  "rbenv"
+  "reattach-to-user-namespace"
+  "ruby-build"
+  "sip"
+  "zsh-syntax-highlighting"
 )
 
 echo "installing binaries..."
@@ -43,11 +39,9 @@ brew cleanup
 
 # Apps
 apps=(
-  alacritty
-  balenaetcher
-  transmission
-  lastpass
-  vlc
+  "alacritty"
+  "balenaetcher"
+  "lastpass"
 )
 
 # Install apps to /Applications

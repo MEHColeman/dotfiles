@@ -3,47 +3,19 @@
 
 sudo apt-get update
 
-# Update homebrew recipes
-brew update
-
-# Install GNU core utilities (those that come with OS X are outdated)
-brew install coreutils
-
-# Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
-brew install findutils
-
-binaries=(
-  ack
-  ctags
-  diffr
-  erlang
-  elixir
-  gh
-  mcfly
-  mosh
-  pyqt
-  qt
-  rbenv
-  ruby-build
-  sip
-  tree
-  zsh-syntax-highlighting
+declare -a binaries=(
+  "coreutils"
+  "findutils"
+  "ctags"
+  "diffr"
+  "erlang"
+  "elixir"
+  "pyqt"
+  "qt"
+  "ruby-build"
+  "sip"
+  "zsh-syntax-highlighting"
 )
 
 echo "installing binaries..."
-brew install "${binaries[@]}"
-
-brew cleanup
-
-brew tap caskroom/fonts
-
-fonts=(
-  font-m-plus
-  font-clear-sans
-  font-roboto
-  font-inconsolata
-)
-
-# install fonts
-echo "installing fonts..."
-brew cask install "${fonts[@]}"
+sudo apt-get install -yqq "${binaries[@]}"
