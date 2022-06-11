@@ -71,7 +71,6 @@ do
   fi
 done
 
-
 eval "$clean_command"
 
 echo "Done"
