@@ -1,5 +1,4 @@
-#!/bin/sh
-# copied from lapwinglabs,com/blog/hacker-guide-to-setting-up-your-mac
+#!/bin/bash
 
 sudo apt-get update
 
