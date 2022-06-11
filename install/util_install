@@ -19,9 +19,9 @@ case $machine in
     clean_command="brew clean"
     ;;
   Linux)
-    update_command="apt-get -qq update"
-    install_command="apt-get install -yqq"
-    clean_command="apt-get autoclean"
+    update_command="sudo apt-get -qq update"
+    install_command="sudo apt-get install -yqq"
+    clean_command="sudo apt-get autoclean"
     ;;
   *)
     update_command="#"
