@@ -76,7 +76,7 @@ done
 
 brew install mcfly
 
-brew tap caskroom/fonts
+brew tap homebrew/cask-fonts
 fonts=(
   font-m-plus
   font-clear-sans
@@ -87,8 +87,7 @@ fonts=(
 
 # install fonts
 echo "installing fonts..."
-brew cask install "${fonts[@]}"
-
+brew install --cask "${fonts[@]}"
 
 eval "$clean_command"
 

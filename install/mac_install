@@ -47,6 +47,6 @@ apps=(
 # Install apps to /Applications
 # Default is: /Users/$user/Applications
 echo "installing apps..."
-brew cask install --appdir="/Applications" "${apps[@]}"
+brew install --cask --appdir="/Applications" "${apps[@]}"
 
 echo "Don't forget to remove the ctrl-arrow mac shortcuts so that tmux works nicely"

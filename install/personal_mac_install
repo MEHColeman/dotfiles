@@ -3,7 +3,7 @@
 echo "This script installs stuff I want on a home machine, but not a work machine, for macOS"
 
 update_command="brew update"
-install_command="brew cask install"
+install_command="brew install --cask"
 clean_command="brew clean"
 
 echo "Installing with $install_command"
