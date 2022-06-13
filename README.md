@@ -67,12 +67,12 @@ I also install an SSH keyfile.
 It also sets up useful working directories that I commonly use when doing
 development work.
 
-XXXXCHECK the git remotes it adds with my new blog/shoreditch set up.
-
 # Installation on a new machine.
 
 You might not have a bunch of useful tools (like git, or SSH keys..) when you
-have a fresh machine, so the recommended order of installation is:
+have a fresh machine, so the recommended installation procedure follows:
+
+You will need curl or wget, sudo and git (for installing homebrew) already installed.
 
 Download the basic installation script from the Github repo:
 ~~~
