@@ -36,4 +36,4 @@ ENV HOME /home/tester
 # Change working directory
 WORKDIR /home/tester/.dotfiles
 
-CMD ["/bin/zsh"]
+CMD ["/bin/sh"]
