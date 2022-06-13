@@ -17,9 +17,6 @@ then
   mkdir -p ~/dev/bw/projects/
   mkdir -p ~/notes/
   git clone git@github.com:MEHColeman/just_dev_things.git ~/notes/general
-  git clone git@github.com:MEHColeman/mehcoleman.github.io.git ~/notes/blog
-  cd ~/notes/blog || exit
-  git remote add private git@bitbucket.org:MEHColeman/blog.git
 
   # Install vim-plug and add plugins
   curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
