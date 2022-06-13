@@ -4,6 +4,9 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 # Create test user and add to sudoers
 
+RUN apt-get update
+RUN apt-get install -yqq sudo curl
+
 RUN useradd -m -s /bin/zsh -p test tester
 RUN usermod -aG sudo tester
 RUN echo "tester   ALL=(ALL:ALL) NOPASSWD: ALL" > /etc/sudoers
