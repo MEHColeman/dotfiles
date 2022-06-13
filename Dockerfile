@@ -1,5 +1,6 @@
 FROM ubuntu:22.04 AS start
 LABEL maintainer="Mark Coleman <m@rkcoleman.co.uk>"
+ENV DEBIAN_FRONTEND=noninteractive
 
 # Create test user and add to sudoers
 
