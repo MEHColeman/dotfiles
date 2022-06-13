@@ -12,20 +12,6 @@ RUN usermod -aG sudo tester
 RUN echo "tester   ALL=(ALL:ALL) NOPASSWD: ALL" > /etc/sudoers
 WORKDIR /home/tester
 
-# Add dotfiles and chown
-FROM start AS temp_files
-ADD https://github.com/MEHColeman/dotfiles/archive/refs/heads/master.zip /temp/
-RUN apt-get update -qq
-RUN apt-get install -yqq unzip
-RUN unzip /temp/master.zip
-
-FROM start AS final
-COPY --from=temp_files /home/tester/dotfiles-master /home/tester/.dotfiles
-
-# Install the most commonly required packages and tools
-# Some (like make) are prerequisites to the dotfile installation
-RUN /home/tester/.dotfiles/install/basic_install
-
 # Chown files
 RUN chown -R tester:tester /home/tester
 
