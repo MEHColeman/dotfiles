@@ -116,10 +116,10 @@ installation methods on mac or linux environments.
 
 For a HOME mac, also run the ```install/personal_mac_install``` script to install
 things like VLC, plex, mimestream, dropbox, etc.
+For a HOME unix box, you can run `install/personal_unix_install`.
 
 Run ```install/util_install``. This contains runs for both mac and linux and
 installs useful packages like tig and glances, etc.
-
 
 ```ln -s``` the appropriate local/* files into the .dotfile directory
 e.g.
