@@ -46,7 +46,7 @@ make target_env=generic_ubuntu all
 ~~~
 or
 ~~~
-make target_env=mac_os all
+make target_env=home_macos all
 ~~~
 ## Additional Installation Scripts
 
@@ -136,9 +136,11 @@ You can use these later for stuff that shouldn't ever be in a git repo.
 
 `install/always_install` will install oh-my-zsh, tmuxifier and update dotfile
 submodules and oh-my-zsh extensions
-`[sudo] install/dev_install` will install and configure vim and plugins and rbenv on both mac and linux
 
 Now, finally, you can install the dofiles. (See above)
+
+Also,
+`[sudo] install/dev_install` will install and configure vim and plugins and rbenv on both mac and linux
 
 ## New installation additional checklist
 
