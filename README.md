@@ -97,6 +97,7 @@ ssh-keygen -o -a 100 -t ed25519 -f ~/.ssh/id_ed25519_unixboxname -C "mark@unixbo
 Add this to other machines you need ssh access to, like github, bitbucket, or another
 development machine.
 For github, copy the public key, and add at ```https://github.com/settings/keys```
+Or, `gh auth login`
 
 For other hosts:
 ~~~
