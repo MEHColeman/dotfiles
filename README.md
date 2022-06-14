@@ -94,8 +94,8 @@ mkdir -p $HOME/.ssh
 ssh-keygen -o -a 100 -t ed25519 -f ~/.ssh/id_ed25519_unixboxname -C "mark@unixboxname"
 ~~~
 
-Add this to other machines you need ssh access to, like github, bitbucket, or another
-development machine.
+Add this to other machines you need ssh access to, like github, bitbucket, or
+another development machine.
 For github, copy the public key, and add at ```https://github.com/settings/keys```
 Or, `gh auth login`
 
@@ -138,9 +138,14 @@ You can use these later for stuff that shouldn't ever be in a git repo.
 submodules and oh-my-zsh extensions
 
 Now, finally, you can install the dofiles. (See above)
+Note that some .directories and .files (like .config) might have already been
+created in your $HOME directory during the installation process, so before you
+run the make command, you should delete them so that your .dotfiles version can
+replace it.
 
 Also,
-`[sudo] install/dev_install` will install and configure vim and plugins and rbenv on both mac and linux
+`[sudo] install/dev_install` will install and configure vim and plugins and
+rbenv on both mac and linux
 
 ## New installation additional checklist
 
