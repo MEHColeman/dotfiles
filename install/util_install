@@ -74,11 +74,11 @@ brew install mcfly
 
 brew tap homebrew/cask-fonts
 fonts=(
-  font-m-plus
+  font-mplus
   font-clear-sans
-  font-roboto
   font-inconsolata
   font-rosario
+  font-roboto
 )
 
 # install fonts
