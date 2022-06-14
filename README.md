@@ -201,24 +201,6 @@ replaced by a symlink.
 Currently, the oh-my-zsh directory is independent. It has some custom themes
 and plugins that you'll need!
 
-## Installation
-
-Installation will:
-* delete existing .dotfiles and replace with symlink from this repository
-* install a local bin directory with common useful scripts and executables
-* install oh-my-zsh and set zsh to the be default shell.
-
-`git clone` this repository to `.dofiles` directory.
-`make all target_env=home_macos` to install the dotfiles with os-specific local files
-Valid options are currently home_macos and generic_ubuntu
-
-`install/always_install.sh` will install oh-my-zsh, tmuxifier and update dotfile
-submodules and oh-my-zsh extensions. This needs to run later, since it overrides
-other dotfiles like zshrc that will have been blatted by the previous installs.
-
-`[sudo] install/dev_install.sh` will install and configure vim and plugins, rbenv
-and dev directories
-`[sudo] install/util_install.sh` will install a bunch of other useful tools.
 
 ## See Also
 BASH_PROFILE_NOTES_README.txt
