@@ -16,7 +16,7 @@ case $machine in
   Mac)
     update_command="brew update"
     install_command="brew install"
-    clean_command="brew clean"
+    clean_command="brew cleanup"
     ;;
   Linux)
     update_command="sudo apt-get -qq update"
