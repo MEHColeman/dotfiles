@@ -22,7 +22,7 @@ declare -a casks=(
   "dymo-label"
   "emby-server"
   "iina"
-  "genimi"
+  "gemini"
   "inkscape"
   "ledger-live"
   "makemkv"
