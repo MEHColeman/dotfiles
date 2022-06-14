@@ -137,7 +137,6 @@ You can use these later for stuff that shouldn't ever be in a git repo.
 `install/always_install` will install oh-my-zsh, tmuxifier and update dotfile
 submodules and oh-my-zsh extensions
 `[sudo] install/dev_install` will install and configure vim and plugins and rbenv on both mac and linux
-`[sudo] install/util_install` will install a bunch of other useful tools on both mac and linux
 
 Now, finally, you can install the dofiles. (See above)
 
