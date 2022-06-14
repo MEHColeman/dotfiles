@@ -17,11 +17,15 @@ case $machine in
     update_command="brew update"
     install_command="brew install"
     clean_command="brew cleanup"
+    brew_tap_command="brew tap homebrew/cask-"
+    brew_cask_command="brew install --cask"
     ;;
   Linux)
     update_command="sudo apt-get -qq update"
     install_command="sudo apt-get install -yqq"
     clean_command="sudo apt-get autoclean"
+    brew_tap_command="brew tap linuxbrew/"
+    brew_cask_command="brew install --HEAD"
     ;;
   *)
     update_command="#"
@@ -71,8 +75,10 @@ do
 done
 
 brew install mcfly
+brew install diffr
 
-brew tap homebrew/cask-fonts
+eval ${brew_tap_command}fonts
+
 fonts=(
   font-mplus
   font-clear-sans
@@ -83,7 +89,7 @@ fonts=(
 
 # install fonts
 echo "installing fonts..."
-brew install --cask "${fonts[@]}"
+eval $brew_cask_command "${fonts[@]}"
 
 eval "$clean_command"
 

@@ -5,14 +5,10 @@ sudo apt-get update
 declare -a binaries=(
   "coreutils"
   "findutils"
-  "ctags"
-  "diffr"
+  "exuberant-ctags"
   "erlang"
   "elixir"
-  "pyqt"
-  "qt"
   "ruby-build"
-  "sip"
   "zsh-syntax-highlighting"
 )
 

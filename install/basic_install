@@ -80,7 +80,7 @@ case $machine in
     if test ! $(which brew); then
       echo "Installing homebrew..."
       /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-      echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/tester/.zprofile
+      echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> $HOME/.zprofile
       eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
       sudo apt-get update -qq
