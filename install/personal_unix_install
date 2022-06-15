@@ -1,0 +1,77 @@
+#!/bin/bash
+
+echo "This script installs stuff I want on a home machine, but not a work machine, for macOS"
+
+update_command="sudo apt-get update"
+install_command="sudo apt-get install"
+clean_command="apt-get clean"
+
+echo "Installing with $install_command"
+
+# both brew and apt-get have the same name
+declare -a packages=(
+  "gnome-shell-pomodoro"
+  "plexmediaserver"
+  "arduino"
+  "ncdu"
+  "baobab"
+  "discord"
+  "iina"
+  "inkscape"
+  "transmission"
+  "transmission-daemon"
+  "transmission-cli"
+  "vlc"
+  "zoom"
+  "yt-dlp"
+  "pidgin"
+  "telegram-cli"
+  "telegram-desktop"
+  "telegram-purple"
+)
+
+declare -a kegs=(
+  "ffmpeg"
+)
+
+eval "$update_command"
+
+for keg in "${kegs[@]}"
+
+do
+  read -p "Install ${keg} ? (y/n) " -n 1 -r
+  if [[ $REPLY =~ ^[Yy]$ ]]
+  then
+    echo "Installing ${keg}"
+    eval "brew install $keg"
+  fi
+done
+
+for package in "${packages[@]}"
+
+do
+  read -p "Install ${package} ? (y/n) " -n 1 -r
+  if [[ $REPLY =~ ^[Yy]$ ]]
+  then
+    echo "Installing ${package}"
+    eval $install_command $package
+  fi
+done
+
+eval "$clean_command"
+
+echo "To install emby server, follow the instructions at https://emby.media/linux-server.html@
+
+echo "To install mullvad VPN:"
+echo "wget --content-disposition https://mullvad.net/download/app/deb/latest"
+echo "sudo apt install -y ./MullvadVPN-XXXX.X_amd64.deb"
+
+echo "To install OBS"
+echo "sudo add-apt-repository ppa:obsproject/obs-studio"
+echo "sudo apt install obs-studio"
+
+echo "To install zoom:"
+echo "Download deb pacage from https://zoom.us/download?os=linux"
+echo "sudo apt install ./zoom_amd64.deb"
+
+echo "Done"
