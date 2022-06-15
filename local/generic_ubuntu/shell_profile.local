@@ -8,3 +8,7 @@ export PATH="/usr/local/elixir/bin:$PATH"
 
 # linux homebrew is slightly different
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+# use homebrew upgraded openssl when building rubies
+export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
+
