@@ -5,3 +5,6 @@ export PATH="/usr/local/heroku/bin:$PATH"
 
 ### Elixir installed in /usr/local/elixir
 export PATH="/usr/local/elixir/bin:$PATH"
+
+# linux homebrew is slightly different
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
