@@ -70,7 +70,8 @@
 [branch]
 	autosetupmerge = true
 [merge]
-  conflictstyle = diff3
+	conflictStyle = zdiff3
+	tool = vimdiff
 [merge "gemfilelock"]
   name = relocks the Gemfile.lock
   driver = bundle install
@@ -98,3 +99,5 @@
 	insteadOf = https://github.com/
 [lfs]
 	pruneverifyremotealways = true
+[mergetool]
+	prompt = false
