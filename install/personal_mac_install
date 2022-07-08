@@ -21,6 +21,7 @@ declare -a casks=(
   "dropbox"
   "dymo-label"
   "emby-server"
+  "fing"
   "iina"
   "gemini"
   "inkscape"
