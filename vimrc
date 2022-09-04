@@ -96,25 +96,6 @@ endfunction
 
 autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
 
-" Create function to highlight repeated rows and mark them blue
-function! HighlightRepeats() range
-  let lineCounts = {}
-  let lineNum = a:firstline
-  while lineNum <= a:lastline
-    let lineText = getline(lineNum)
-    if lineText != ""
-      let lineCounts[lineText] = (has_key(lineCounts, lineText) ? lineCounts[lineText] : 0) + 1
-    endif
-    let lineNum = lineNum + 1
-  endwhile
-  exe 'syn clear Repeat'
-  for lineText in keys(lineCounts)
-    if lineCounts[lineText] >= 2
-      exe 'syn match Repeat "^' . escape(lineText, '".\^$*[]') . '$"'
-    endif
-  endfor
-endfunction
-
 command! -range=% HighlightRepeats <line1>,<line2>call HighlightRepeats()
 hi Repeat guibg=#2020d0 ctermbg=blue
 
@@ -137,5 +118,26 @@ let g:daylight_morning_hour = 6
 let g:daylight_afternoon_hour = 12
 let g:daylight_evening_hour = 18
 let g:daylight_late_hour = 22
+
+" Create function to highlight repeated rows and mark them blue
+function! HighlightRepeats() range
+  let lineCounts = {}
+  let lineNum = a:firstline
+  while lineNum <= a:lastline
+    let lineText = getline(lineNum)
+    if lineText != ""
+      let lineCounts[lineText] = (has_key(lineCounts, lineText) ? lineCounts[lineText] : 0) + 1
+    endif
+    let lineNum = lineNum + 1
+  endwhile
+  exe 'syn clear Repeat'
+  for lineText in keys(lineCounts)
+    if lineCounts[lineText] >= 2
+      exe 'syn match Repeat "^' . escape(lineText, '".\^$*[]') . '$"'
+    endif
+  endfor
+endfunction
+
+set nohidden
 
 source ~/.vimrc.local
