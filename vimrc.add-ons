@@ -57,5 +57,19 @@ call expand_region#custom_text_objects('ruby', {
 let g:autotagCtagsCmd="uctags"
 
 let g:snipMate = { 'snippet_version' : 1 }
+
+""""""""""""""""""""""""
+" fugitive
+""""""""""""""""""""""""
+" navigate back up trees and blobs with 'jj'
+" You can already navigate to the original commit object with 'c'
+autocmd User fugitive
+  \ if fugitive#buffer().type() =~# '^\%(tree\|blob\)$' |
+  \   nnoremap <buffer> jj :edit %:h<CR> |
+  \ endif
+
+" kill old buffers
+autocmd BufReadPost fugitive://* set bufhidden=delete
+
 2+2
 
