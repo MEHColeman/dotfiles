@@ -19,3 +19,6 @@
 [submodule "oh-my-zsh_custom/plugins/zsh-z"]
 	path = oh-my-zsh_custom/plugins/zsh-z
 	url = https://github.com/agkozak/zsh-z
+[submodule "oh-my-zsh_custom/themes/powerlevel10k"]
+	path = oh-my-zsh_custom/themes/powerlevel10k
+	url = https://github.com/romkatv/powerlevel10k.git
