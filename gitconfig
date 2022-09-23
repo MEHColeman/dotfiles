@@ -101,3 +101,5 @@
 	pruneverifyremotealways = true
 [mergetool]
 	prompt = false
+[rerere]
+	enabled = true
