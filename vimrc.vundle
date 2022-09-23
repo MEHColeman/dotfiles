@@ -13,6 +13,7 @@ endif
 call plug#begin()
 
 " original repos on github
+Plug 'mileszs/ack.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'bling/vim-airline'
 Plug 'chrisbra/Recover.vim'
@@ -62,18 +63,15 @@ Plug 'honza/vim-snippets'
 " Language support
 " (I found these via carlhuda/janus)
 Plug 'tpope/vim-bundler'
-Plug 'kchmck/vim-coffee-script'
 Plug 'chrisbra/csv.vim'
 Plug 'tpope/vim-cucumber'
 Plug 'elixir-lang/vim-elixir'
-Plug 'jimenezrick/vimerl'
 Plug 'tpope/vim-git'
 Plug 'jnwhiteh/vim-golang'
 Plug 'tpope/vim-haml'
 Plug 'pangloss/vim-javascript'
 Plug 'tpope/vim-markdown'
 Plug 'sunaku/vim-ruby-minitest', { 'for': 'ruby' }
-Plug 'mmalecki/vim-node.js'
 Plug 'tpope/vim-rails', { 'for': 'ruby' }
 Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
 Plug 'thoughtbot/vim-rspec', { 'for': 'ruby' }
