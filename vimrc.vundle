@@ -3,6 +3,8 @@
 """""""""""""""""""""""""
 
 " Ensure vim-plug is installed
+" Use `:PlugInstall' to install
+" Use `:PlugUpdate` to update
 
 let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
 if empty(glob(data_dir . '/autoload/plug.vim'))
@@ -32,7 +34,7 @@ Plug 'vim-scripts/taglist.vim'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'scrooloose/nerdcommenter'
 " gem install rubocop
-Plug 'scrooloose/syntastic'
+Plug 'dense-analysis/ale'
 Plug 'terryma/vim-expand-region'
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-endwise'
