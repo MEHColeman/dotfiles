@@ -99,6 +99,8 @@
 	insteadOf = https://github.com/
 [lfs]
 	pruneverifyremotealways = true
+[pull]
+	ff = only
 [mergetool]
 	prompt = false
 [rerere]
