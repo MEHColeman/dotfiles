@@ -1,18 +1,5 @@
 filetype off                   " required!
 
-"""""""""""""""""""""""""
-" SYNTASTIC
-"""""""""""""""""""""""""
-" I think you need to have the rubocop gem installed for this...
-let g:syntastic_ruby_checkers=['rubocop']
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-let g:syntastic_always_populate_loc_list = 1
-
 let g:slime_target = 'tmux'
 """""""""""""""""""""""""
 " CTRL-P
@@ -70,6 +57,3 @@ autocmd User fugitive
 
 " kill old buffers
 autocmd BufReadPost fugitive://* set bufhidden=delete
-
-2+2
-
