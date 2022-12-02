@@ -42,3 +42,9 @@ map <leader>t :Unite<cr>
 map <leader>n :NERDTreeToggle<cr>
 map <leader>. :CtrlPTag<cr>
 map <leader>b :TagbarToggle<cr>
+
+" RSpec.vim mappings
+map <Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader>s :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
+map <Leader>a :call RunAllSpecs()<CR>
