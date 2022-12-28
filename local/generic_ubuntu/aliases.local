@@ -1,3 +1,2 @@
 alias gc='chromium >/dev/null 2>/dev/null &'
 alias lock='xscreensaver-command -lock'
-alias vi=vim

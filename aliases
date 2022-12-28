@@ -49,3 +49,5 @@ alias pg_stop="launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.postgresql.
 alias kl="kubectl"
 alias klx="kubectx"
 alias kln="kubens"
+
+alias vi="nvim"
