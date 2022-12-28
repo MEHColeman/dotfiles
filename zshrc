@@ -38,7 +38,7 @@ ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-plugins=(mark gitfast git-extras tmux dirhistory rbenv thefuck brew docker gem zsh-z zsh-syntax-highlighting kubectl ansible)  #tmuxinator
+plugins=(mark gitfast git-extras tmux dirhistory rbenv thefuck brew docker gem zsh-z zsh-syntax-highlighting kubectl ansible zsh-autosuggestions web-search)  #tmuxinator
 
 source $ZSH/oh-my-zsh.sh
 
