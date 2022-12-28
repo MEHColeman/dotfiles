@@ -1,7 +1,7 @@
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
 
-source $HOME/.shell-profile
+source $HOME/.shell_profile
 source $HOME/.bash_aliases
 
 if [[ -s "$HOME/.prompt" ]]
