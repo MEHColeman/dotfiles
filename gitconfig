@@ -76,7 +76,7 @@
   name = relocks the Gemfile.lock
   driver = bundle install
 [commit]
-  template = ~/.git_commit_template.txt
+	template = ~/.git_commit_template.txt
 [filter "lfs"]
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
