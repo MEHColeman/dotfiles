@@ -9,6 +9,9 @@ if $COLORTERM == 'gnome-terminal'
   set t_Co=256
 endif
 
+" add python support to neovim
+let g:python_host_prog = '/usr/local/opt/python/libexec/bin/python'
+
 source ~/.vimrc.vundle
 source ~/.vimrc.add-ons
 source ~/.vimrc.key_mappings
