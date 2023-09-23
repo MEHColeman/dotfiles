@@ -3,13 +3,7 @@
 sudo apt-get update
 
 declare -a binaries=(
-  "coreutils"
-  "findutils"
   "exuberant-ctags"
-  "erlang"
-  "elixir"
-  "ruby-build"
-  "zsh-syntax-highlighting"
 )
 
 echo "installing binaries..."

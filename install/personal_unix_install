@@ -11,17 +11,14 @@ echo "Installing with $install_command"
 # both brew and apt-get have the same name
 declare -a packages=(
   "gnome-shell-pomodoro"
-  "plexmediaserver"
   "arduino"
   "ncdu"
   "baobab"
   "discord"
-  "iina"
   "inkscape"
   "transmission"
   "transmission-daemon"
   "transmission-cli"
-  "vlc"
   "zoom"
   "yt-dlp"
   "pidgin"
@@ -60,15 +57,9 @@ done
 
 eval "$clean_command"
 
-echo "To install emby server, follow the instructions at https://emby.media/linux-server.html@
-
 echo "To install mullvad VPN:"
 echo "wget --content-disposition https://mullvad.net/download/app/deb/latest"
 echo "sudo apt install -y ./MullvadVPN-XXXX.X_amd64.deb"
-
-echo "To install OBS"
-echo "sudo add-apt-repository ppa:obsproject/obs-studio"
-echo "sudo apt install obs-studio"
 
 echo "To install zoom:"
 echo "Download deb pacage from https://zoom.us/download?os=linux"
