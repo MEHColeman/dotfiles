@@ -11,6 +11,7 @@ config/hub
 config/octave
 config/spotify
 config/Trolltech.conf
+config/Bitwarden
 
 bash_profile.local
 aliases.local
