@@ -38,15 +38,12 @@ echo "Installing with $install_command"
 # installation
 # make needed for dotfile installations
 declare -a packages=(
-  "git"
   "ca-certificates"
   "curl"
   "openssh-client"
-  "zsh"
   "make"
   "cmake"
   "sudo"
-  "gh"
 )
 
 eval "$update_command"
@@ -90,7 +87,3 @@ case $machine in
   *)
     # no-op
 esac
-
-chsh -s /usr/bin/zsh
-
-

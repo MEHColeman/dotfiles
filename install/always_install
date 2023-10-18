@@ -14,21 +14,6 @@ then
     ssh-add
   fi
 
-  read -p "Install oh-my-zsh? (y/n) " -n 1 -r
-  echo
-  if [[ $REPLY =~ ^[Yy]$ ]]
-  then
-    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-    mv ~/.zshrc.pre-oh-my-zsh ~/.zshrc
-  fi
-
-  read -p "Install tmuxifier? (y/n) " -n 1 -r
-  echo
-  if [[ $REPLY =~ ^[Yy]$ ]]
-  then
-    git clone https://github.com/jimeh/tmuxifier.git ~/.tmuxifier
-  fi
-
   read -p "Update .dotfile submodules? (y/n) " -n 1 -r
   echo
   if [[ $REPLY =~ ^[Yy]$ ]]
