@@ -85,8 +85,6 @@ export ANDROID_SDK_ROOT=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
 export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
 
-
 export MANPATH="/usr/local/man:$MANPATH"
 
-eval "$(thefuck --alias)"
 eval "$(rbenv init -)"
