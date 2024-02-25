@@ -89,6 +89,7 @@
 	log = diff-highlight | less -RX
 	show = diff-highlight | less -RX
 	diff = diff-highlight | less -RX
+	grep = diff-highlight | less -RX
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path =
