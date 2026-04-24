@@ -1,15 +1,3 @@
-[submodule "janus/syntastic"]
-	path = janus/syntastic
-	url = https://github.com/scrooloose/syntastic.git
-[submodule "janus/vim-gitgutter"]
-	path = janus/vim-gitgutter
-	url = https://github.com/airblade/vim-gitgutter.git
-[submodule "janus/command-t"]
-	path = janus/command-t
-	url = https://github.com/wincent/Command-T.git
-[submodule "vim/bundle/vundle"]
-	path = vim/bundle/vundle
-	url = https://github.com/gmarik/vundle.git
 [submodule "oh-my-zsh_custom/plugins/zsh-syntax-highlighting"]
 	path = oh-my-zsh_custom/plugins/zsh-syntax-highlighting
 	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
