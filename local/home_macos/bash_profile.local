@@ -1,1 +1,6 @@
-# local stuff here, and in aliases.local
+# If not running interactively, don't do anything
+[ -z "$PS1" ] && return
+
+### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
+export PATH="$HOME/.rd/bin:$PATH"
+### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)

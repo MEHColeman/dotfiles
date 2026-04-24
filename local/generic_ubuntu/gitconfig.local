@@ -1,2 +1,8 @@
-[user]
-        email=m@rkcoleman.co.uk
+# Overrides for Linux machines. Wins over ../../gitconfig because included last.
+
+[credential "https://github.com"]
+	helper =
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper =
+	helper = !/usr/bin/gh auth git-credential

@@ -1,10 +1,19 @@
+# Build artifacts
 xmonad/xmonad-x86_64-linux
 xmonad/xmonad.errors
 xmonad/xmonad.hi
 xmonad/xmonad.o
 vim/view
 vim/.netrwhist
+vim/bundle/**
+vim/bundle/vundle/**
+vim/_temp
+vim/_backup
+vim/spell
+vim/plugged
 
+# App runtime state that used to bleed into this repo when config/ was
+# symlinked wholesale to ~/.config/
 config/chromium
 config/gh
 config/hub
@@ -13,17 +22,8 @@ config/spotify
 config/Trolltech.conf
 config/Bitwarden
 
-bash_profile.local
-aliases.local
-gitconfig.local
-shell_profile.local
-vimrc.local
-tmux.conf.local
-vim/bundle/**
-vim/bundle/vundle/**
-vim/_temp
-vim/_backup
-vim/spell
-vim/plugged
-
-*.private
+# At the repo root, `.local` files are created by `set_local_dotfiles`
+# (symlinks from local/<env>/*). They must never be committed at the root.
+# Anchored to root so the real sources at local/<env>/*.local stay tracked.
+/*.local
+/*.private

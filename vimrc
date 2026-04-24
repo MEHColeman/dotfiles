@@ -12,7 +12,7 @@ endif
 " add python support to neovim
 let g:python_host_prog = '/usr/local/opt/python/libexec/bin/python'
 
-source ~/.vimrc.vundle
+source ~/.vimrc.plugins
 source ~/.vimrc.add-ons
 source ~/.vimrc.key_mappings
 

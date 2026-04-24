@@ -1,8 +1,6 @@
-[include]
-        path=~/.gitconfig.local
 [user]
 	name = Mark Coleman
-	email = m@rkcoleman.co.uk
+	email = git@protected.mehcoleman.com
 	signingkey = 5016C1BB1F1FBA4D
 
 [color]
@@ -108,3 +106,9 @@
 	helper = store
 [init]
 	defaultBranch = master
+
+# Machine-specific overrides (email, credential helpers, etc.) go in
+# ~/.gitconfig.local, populated from local/<target_env>/gitconfig.local
+# via `make dotfiles`. Included last so it wins over values above.
+[include]
+	path = ~/.gitconfig.local

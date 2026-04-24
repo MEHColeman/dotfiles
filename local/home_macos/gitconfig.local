@@ -1,2 +1,1 @@
-[user]
-        email=m@rkcoleman.co.uk
+# Overrides for home macOS. Wins over ../../gitconfig because included last.
