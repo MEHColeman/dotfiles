@@ -1,0 +1,14 @@
+# Claude Code state/auth — do NOT track
+.credentials.json
+history.jsonl
+mcp-needs-auth-cache.json
+backups/
+cache/
+downloads/
+file-history/
+plugins/
+projects/
+session-env/
+sessions/
+shell-snapshots/
+tasks/
