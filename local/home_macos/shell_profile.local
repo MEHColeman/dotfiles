@@ -1,6 +1,22 @@
-# local stuff here
+# macOS-only shell profile additions. Sourced from shell_profile after
+# the shared defaults, so PATH entries prepended here win.
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 export GITLAB_HOST="gitlab.builder.ai"
 
+# System / Homebrew PATH with XQuartz
+export PATH="/usr/local/bin:/bin:/usr/sbin:/sbin:/usr/bin:/opt/X11/bin:$PATH"
+export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+export PATH="/usr/local/opt/python@3.9/bin:$PATH"
+
+export MANPATH="/usr/local/man:$MANPATH"
+
+# Android development paths (macOS uses ~/Library/)
+export ANDROID_SDK_ROOT=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
+export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
+
+### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
+export PATH="$HOME/.rd/bin:$PATH"
+### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)

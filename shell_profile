@@ -75,17 +75,8 @@ export KUBECONFIG
 IFS="$OIFS"
 
 export GPG_TTY=$(tty)
-export PATH="/usr/local/bin:/bin:/usr/sbin:/sbin:/usr/bin:/opt/X11/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
-export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 export PATH="$HOME/.rbenv/shims:$HOME/.rbenv/bin:$PATH"
-
-# Android development paths
-export ANDROID_SDK_ROOT=$HOME/Library/Android/sdk
-export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
-export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
-
-export MANPATH="/usr/local/man:$MANPATH"
 
 eval "$(rbenv init -)"
 

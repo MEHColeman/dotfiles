@@ -48,14 +48,9 @@ export SSH_KEY_PATH="$HOME/.ssh/id_ed25519_common"
 
 # init tmuxifier
 eval "$(tmuxifier init -)"
-export PATH="/usr/local/opt/python@3.9/bin:$PATH"
 
 # init mcfly
 eval "$(mcfly init zsh)"
-
-### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
-export PATH="/Users/mark/.rd/bin:$PATH"
-### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
