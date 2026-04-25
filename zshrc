@@ -50,7 +50,7 @@ export SSH_KEY_PATH="$HOME/.ssh/id_ed25519_common"
 eval "$(tmuxifier init -)"
 
 # init mcfly
-eval "$(mcfly init zsh)"
+command -v mcfly >/dev/null 2>&1 && eval "$(mcfly init zsh)"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
