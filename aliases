@@ -49,8 +49,8 @@ alias kln="kubens"
 
 alias vi="nvim"
 
-# `just` — j walks up from cwd, falling back to ~/justfile.
+# `just` — j walks up from cwd, falling back to ~/.justfile.
 #          jg explicitly targets the global justfile (~/.config/just/justfile,
-#          which is symlinked to ~/justfile).
+#          which is symlinked to the dotfiles repo).
 alias j='just'
 alias jg='just -g'
